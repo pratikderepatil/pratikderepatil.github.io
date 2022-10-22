@@ -5,6 +5,12 @@
     */
 
 /*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/
+
+/*!
      * 
      *   typed.js - A JavaScript Typing Animation Library
      *   Author: Matt Boldt <me@mattboldt.com>
@@ -13,6 +19,8 @@
      *   License(s): MIT
      * 
      */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 /**
  * @license React
