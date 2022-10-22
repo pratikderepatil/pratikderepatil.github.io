@@ -9,6 +9,7 @@ import {
 	DrawerHeader,
 	DrawerOverlay,
 	Flex,
+	HStack,
 	Image,
 	useColorModeValue,
 	useDisclosure,
@@ -16,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { TfiMenu } from "react-icons/tfi";
 import React from "react";
-import logo from "../Data/images/name.png";
+import logo from "../Data/images/name1.png";
 import { Link } from "react-scroll";
 
 const Links = ["About", "Skills", "Experience", "Projects", "Testimonials"];
@@ -46,67 +47,119 @@ const Navbar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const btnRef = React.useRef();
 	return (
-		<Flex m={2} p={4} pl={[4, 8]} justifyContent="space-between" mb={0}>
-			<Button ref={btnRef} size={"2xl"} variant="unstyled" onClick={onOpen}>
-				<TfiMenu w={10} />
-			</Button>
-			<Drawer
-				isOpen={isOpen}
-				placement="left"
-				onClose={onClose}
-				finalFocusRef={btnRef}
+		<>
+			<Flex
+				p={4}
+				pl={[4, 8]}
+				justifyContent="space-between"
+				mb={0}
+				display={{ base: "none", lg: "flex" }}
+				bgColor="#FFFBEC"
 			>
-				<DrawerOverlay />
-				<DrawerContent bgColor="transparent">
-					<DrawerHeader
-						bgColor={"#FFDE59"}
-						borderBottomRightRadius={"25"}
-						borderBottomWidth="1px"
-						fontFamily={"heading"}
-						fontWeight="bold"
-					>
-						Menu
-					</DrawerHeader>
+				<HStack w={"75%"} gap={5} alignItems="left">
+					{Links.map((ele) => {
+						return (
+							<Box
+								borderBottomWidth={2}
+								borderBottomLeftRadius={"25"}
+								borderTopWidth={2}
+								borderTopRightRadius={"25"}
+								pl={"3"}
+								pr={"3"}
+								borderColor="#FFDE59"
+								key={ele}
+							>
+								<Button
+									size="lg"
+									fontFamily={"heading"}
+									pl={"3"}
+									pr={"3"}
+									color="black"
+									variant={"unstyled"}
+								>
+									<NavLink key={ele}>{ele}</NavLink>
+								</Button>
+								<Divider w={"75%"} colorScheme />
+							</Box>
+						);
+					})}
+				</HStack>
+				<Image src={logo} w={["50%", "50%", "30%", "20%"]} />
+			</Flex>
+			<Flex
+				p={4}
+				pl={[4, 8]}
+				justifyContent="space-between"
+				mb={0}
+				bgColor="#FFFBEC"
+				display={{ base: "flex", lg: "none" }}
+			>
+				<Button ref={btnRef} size={"2xl"} variant="unstyled" onClick={onOpen}>
+					<TfiMenu w={10} />
+				</Button>
+				<Drawer
+					isOpen={isOpen}
+					placement="left"
+					onClose={onClose}
+					finalFocusRef={btnRef}
+				>
+					<DrawerOverlay />
+					<DrawerContent bgColor="transparent">
+						<DrawerHeader
+							bgColor={"#FFDE59"}
+							borderBottomRightRadius={"25"}
+							borderBottomWidth="1px"
+							fontFamily={"heading"}
+							fontWeight="bold"
+						>
+							Menu
+						</DrawerHeader>
 
-					<DrawerBody bgColor={"whitesmoke"} w={"93%"}>
-						<VStack pl={4} pt={4} w={"75%"} gap={5} alignItems="left">
-							{Links.map((ele) => {
-								return (
-									<Box
-										borderBottomWidth={2}
-										borderBottomLeftRadius={"25"}
-										pl={"4"}
-										borderColor="#FFDE59"
-										key={ele}
-									>
-										<Button
-											size="lg"
-											fontFamily={"heading"}
+						<DrawerBody bgColor={"whitesmoke"} w={"93%"}>
+							<VStack pl={4} pt={4} gap={5} w={"75%"} alignItems="left">
+								{Links.map((ele) => {
+									return (
+										<Box
+											borderBottomWidth={2}
+											borderBottomLeftRadius={"25"}
+											borderTopWidth={2}
+											borderTopRightRadius={"25"}
 											pl={"4"}
-											color="black"
-											variant={"unstyled"}
+											pr={"4"}
+											borderColor="#FFDE59"
+											key={ele}
 										>
-											<NavLink key={ele}>{ele}</NavLink>
-										</Button>
-										<Divider w={"75%"} colorScheme />
-									</Box>
-								);
-							})}
-						</VStack>
-					</DrawerBody>
-					<DrawerFooter
-						bgColor={"#FFDE59"}
-						borderTopWidth="1px"
-						w={"93%"}
-						borderBottomRightRadius={"25"}
-						fontFamily={"heading"}
-					>
-						~ pratikderepatil
-					</DrawerFooter>
-				</DrawerContent>
-			</Drawer>
-			<Image src={logo} w={["50%", "50%", "30%", "20%"]} />
-		</Flex>
+											<Button
+												size="lg"
+												fontFamily={"heading"}
+												pl={"4"}
+												color="black"
+												variant={"unstyled"}
+												ref={btnRef}
+												onClick={onClose}
+											>
+												<NavLink key={ele}>{ele}</NavLink>
+											</Button>
+											<Divider w={"75%"} colorScheme />
+										</Box>
+									);
+								})}
+							</VStack>
+						</DrawerBody>
+						<DrawerFooter
+							bgColor={"#FFDE59"}
+							borderTopWidth="1px"
+							w={"93%"}
+							borderBottomRightRadius={"25"}
+							fontFamily={"heading"}
+						>
+							~ pratikderepatil
+						</DrawerFooter>
+					</DrawerContent>
+				</Drawer>
+				<Image src={logo} w={["50%", "50%", "30%", "20%"]} />
+			</Flex>
+		</>
 	);
 };
 

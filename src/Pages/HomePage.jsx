@@ -6,6 +6,9 @@ import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
 import TechStack from "../Components/TechStack";
 import Testimonials from "../Components/Testimonials";
+import { VStack } from "@chakra-ui/react";
+import Calendar from "../Components/Calendar";
+import Stats from "../Components/Stats";
 
 const HomePage = () => {
 	return (
@@ -13,14 +16,16 @@ const HomePage = () => {
 			<div className="fixed">
 				<Navbar />
 			</div>
-			<div className="container">
+			<VStack className="container" gap={5} w="100%">
 				<About />
-				{/* <Experience />
-				<Projects />
-				<Skills />
 				<TechStack />
-				<Testimonials /> */}
-			</div>
+				<Skills />
+				<Experience />
+				<Projects />
+				<Calendar />
+				<Stats />
+				<Testimonials />
+			</VStack>
 		</>
 	);
 };
