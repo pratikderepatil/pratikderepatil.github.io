@@ -4,12 +4,12 @@ export const projects = [
 		tags: ["E-Commerce", "Individual"],
 
 		projectimages: [
-			"homepagedark",
-			"homepagelight",
-			"logindark",
-			"loginlight",
-			"signupdark",
-			"signuplight",
+			"https://i.postimg.cc/tJ0bzTr9/homepagedark.png",
+			"https://i.postimg.cc/Jz7LxSQH/homepagelight.png",
+			"https://i.postimg.cc/J7JMzNn0/logindark.png",
+			"https://i.postimg.cc/Nfkt1QRw/loginlight.png",
+			"https://i.postimg.cc/zXr5bybj/signupdark.png",
+			"https://i.postimg.cc/8chSXS3M/signuplight.png",
 		],
 		description:
 			"Shop.com is an e-commerce website that allows purchasing a variety of products.",
@@ -21,7 +21,12 @@ export const projects = [
 	},
 	{
 		projectname: "HubSpot.com",
-		projectimages: [],
+		projectimages: [
+			"https://i.postimg.cc/bYkNH31k/homepage.png",
+			"https://i.postimg.cc/rs1VVwqQ/chatbot.png",
+			"https://i.postimg.cc/nrbVfDfX/demoform.png",
+			"https://i.postimg.cc/jdhxB2gj/signup.png",
+		],
 		description:
 			"Free CRM (Customer relationship management) for customer support, sales, and marketing with easy-to-use features like live chat, meeting scheduling, and email tracking.",
 		deploymentlink: "https://preeminent-bienenstitch-299fc7.netlify.app/",

@@ -16,15 +16,15 @@ const HomePage = () => {
 			<div className="fixed">
 				<Navbar />
 			</div>
-			<VStack className="container" gap={5} w="100%">
+			<VStack className="container" gap={5} w="100%" pb="10">
 				<About />
-				<TechStack />
+				{/* <TechStack />
 				<Skills />
-				<Experience />
+				<Experience /> */}
 				<Projects />
 				<Calendar />
 				<Stats />
-				<Testimonials />
+				{/* <Testimonials /> */}
 			</VStack>
 		</>
 	);
