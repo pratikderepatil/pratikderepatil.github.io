@@ -16,7 +16,7 @@ export const projects = [
 		deploymentlink: "https://valid-circle-9091.vercel.app/",
 		githublink: "https://github.com/pratikderepatil/valid-circle-9091",
 		techstack: ["Chakra UI", "JavaScript", "React JS"],
-		features: ["Signup", "Login", "Search", "Dark Mode", "Cart"],
+		features: ["Signup and Login page", "Dark mode for all pages", "Cart page"],
 		areaofresponsibility: null,
 	},
 	{
@@ -33,7 +33,14 @@ export const projects = [
 		githublink: "https://github.com/pratikderepatil/roomy-pet-3292/",
 		techstack: ["CSS", "JavaScript", "HTML"],
 		tags: ["CRM Tool", "Collaborative"],
-		features: ["Login", "Signup", "Chat Bot", "Search"],
-		areaofresponsibility: ["Lead", "Signup", "Chat Bot"],
+		features: [
+			"Signup and Login page",
+			"Pricing, Marketing, and Contact sales page",
+		],
+		areaofresponsibility: [
+			"Lead the project",
+			"Signup and Contact sales page",
+			"Chatbot",
+		],
 	},
 ];

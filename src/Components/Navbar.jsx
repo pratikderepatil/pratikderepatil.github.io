@@ -1,7 +1,6 @@
 import {
 	Box,
 	Button,
-	Divider,
 	Drawer,
 	DrawerBody,
 	DrawerContent,
@@ -21,31 +20,31 @@ import logo from "../Data/images/name1.png";
 import { Link } from "react-scroll";
 
 const Links = ["About", "Skills", "Experience", "Projects", "Testimonials"];
-
-const NavLink = ({ children }) => (
-	<Link
-		style={{ cursor: "pointer" }}
-		px={2}
-		py={1}
-		rounded={"md"}
-		_hover={{
-			textDecoration: "none",
-			bg: useColorModeValue("gray.200", "gray.700"),
-		}}
-		activeClass="active"
-		to={children}
-		spy={true}
-		smooth={true}
-		offset={-100}
-		duration={500}
-	>
-		{children}
-	</Link>
-);
-
+// https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download
 const Navbar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const btnRef = React.useRef();
+
+	const NavLink = ({ children }) => (
+		<Link
+			style={{ cursor: "pointer" }}
+			px={2}
+			py={1}
+			rounded={"md"}
+			_hover={{
+				textDecoration: "none",
+				bg: useColorModeValue("gray.200", "gray.700"),
+			}}
+			activeClass="active"
+			to={children}
+			spy={true}
+			smooth={true}
+			offset={-100}
+			duration={500}
+			onClick={onClose}
+		>
+			{children}
+		</Link>
+	);
 	return (
 		<>
 			<Flex
@@ -79,10 +78,31 @@ const Navbar = () => {
 								>
 									<NavLink key={ele}>{ele}</NavLink>
 								</Button>
-								<Divider w={"75%"} colorScheme />
 							</Box>
 						);
 					})}
+					<Box
+						borderBottomWidth={2}
+						borderBottomLeftRadius={"25"}
+						borderTopWidth={2}
+						borderTopRightRadius={"25"}
+						pl={"3"}
+						pr={"3"}
+						borderColor="#FFDE59"
+					>
+						<Button
+							size="lg"
+							fontFamily={"heading"}
+							pl={"3"}
+							pr={"3"}
+							color="black"
+							variant={"unstyled"}
+						>
+							<a href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download">
+								Resume
+							</a>
+						</Button>
+					</Box>
 				</HStack>
 				<Image src={logo} w={["50%", "50%", "30%", "20%"]} />
 			</Flex>
@@ -94,15 +114,10 @@ const Navbar = () => {
 				bgColor="#FFFBEC"
 				display={{ base: "flex", lg: "none" }}
 			>
-				<Button ref={btnRef} size={"2xl"} variant="unstyled" onClick={onOpen}>
+				<Button size={"2xl"} variant="unstyled" onClick={onOpen}>
 					<TfiMenu w={10} />
 				</Button>
-				<Drawer
-					isOpen={isOpen}
-					placement="left"
-					onClose={onClose}
-					finalFocusRef={btnRef}
-				>
+				<Drawer isOpen={isOpen} placement="left" onClose={onClose}>
 					<DrawerOverlay />
 					<DrawerContent bgColor="transparent">
 						<DrawerHeader
@@ -115,8 +130,15 @@ const Navbar = () => {
 							Menu
 						</DrawerHeader>
 
-						<DrawerBody bgColor={"whitesmoke"} w={"93%"}>
-							<VStack pl={4} pt={4} gap={5} w={"75%"} alignItems="left">
+						<DrawerBody bgColor={"whitesmoke"} w={"93%"} onClose={onClose}>
+							<VStack
+								pl={4}
+								pt={4}
+								gap={5}
+								w={"75%"}
+								alignItems="left"
+								onClick={onClose}
+							>
 								{Links.map((ele) => {
 									return (
 										<Box
@@ -135,15 +157,34 @@ const Navbar = () => {
 												pl={"4"}
 												color="black"
 												variant={"unstyled"}
-												ref={btnRef}
-												onClick={onClose}
 											>
 												<NavLink key={ele}>{ele}</NavLink>
 											</Button>
-											<Divider w={"75%"} colorScheme />
 										</Box>
 									);
 								})}
+								<Box
+									borderBottomWidth={2}
+									borderBottomLeftRadius={"25"}
+									borderTopWidth={2}
+									borderTopRightRadius={"25"}
+									pl={"3"}
+									pr={"3"}
+									borderColor="#FFDE59"
+								>
+									<Button
+										size="lg"
+										fontFamily={"heading"}
+										pl={"3"}
+										pr={"3"}
+										color="black"
+										variant={"unstyled"}
+									>
+										<a href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download">
+											Resume
+										</a>
+									</Button>
+								</Box>
 							</VStack>
 						</DrawerBody>
 						<DrawerFooter
@@ -152,6 +193,7 @@ const Navbar = () => {
 							w={"93%"}
 							borderBottomRightRadius={"25"}
 							fontFamily={"heading"}
+							onClick={onClose}
 						>
 							~ pratikderepatil
 						</DrawerFooter>

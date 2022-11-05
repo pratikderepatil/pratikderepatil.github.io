@@ -20,7 +20,13 @@ import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 
 const Projects = () => {
 	return (
-		<div id="Projects">
+		<Flex
+			flexDirection={"column"}
+			id="Projects"
+			bgColor="#FFFBEC"
+			pt="5"
+			pb="5"
+		>
 			<Center>
 				<Heading
 					size={["lg", "xl"]}
@@ -55,7 +61,7 @@ const Projects = () => {
 								<Flex gap={3} wrap={"wrap"}>
 									{project.tags?.map((tag) => {
 										return (
-											<Tag key={tag} size={["sm", "lg"]} colorScheme="orange">
+											<Tag key={tag} size={["md", "lg"]} colorScheme="orange">
 												<TagLabel>{tag}</TagLabel>
 											</Tag>
 										);
@@ -64,7 +70,7 @@ const Projects = () => {
 								<Flex gap={3} wrap={"wrap"}>
 									{project.techstack?.map((tag) => {
 										return (
-											<Tag key={tag} size={["sm", "lg"]} colorScheme="gray">
+											<Tag key={tag} size={["md", "lg"]} colorScheme="gray">
 												<TagLabel>{tag}</TagLabel>
 											</Tag>
 										);
@@ -74,7 +80,7 @@ const Projects = () => {
 									{project.projectname}
 								</Heading>
 								<Text fontSize={["md", "lg"]}>{project.description}</Text>
-								<SimpleGrid columns={2}>
+								<SimpleGrid columns={[1, 2]}>
 									<Flex direction={"column"}>
 										<Text fontSize={["md", "lg"]} as="b">
 											Features:
@@ -107,7 +113,7 @@ const Projects = () => {
 										rel="noreferrer"
 									>
 										<Button
-											size={["xs", "sm"]}
+											size={["sm", "md"]}
 											variant={"outline"}
 											colorScheme="blackAlpha"
 											rightIcon={<AiOutlineLink />}
@@ -117,7 +123,7 @@ const Projects = () => {
 									</a>
 									<a href={project.githublink} target="_blank" rel="noreferrer">
 										<Button
-											size={["xs", "sm"]}
+											size={["sm", "md"]}
 											colorScheme="blackAlpha"
 											variant={"outline"}
 											rightIcon={<AiOutlineGithub />}
@@ -131,7 +137,7 @@ const Projects = () => {
 					);
 				})}
 			</SimpleGrid>
-		</div>
+		</Flex>
 	);
 };
 

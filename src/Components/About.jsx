@@ -1,5 +1,6 @@
 import {
 	Button,
+	Divider,
 	Flex,
 	Heading,
 	Image,
@@ -14,7 +15,7 @@ import Typed from "react-typed";
 
 const About = () => {
 	return (
-		<div id="About">
+		<Flex id="About" flexDirection={"column"}>
 			<Stack direction={{ base: "column", md: "row" }} id="About">
 				<Flex flex={1} alignItems="start" justifyContent={"start"}>
 					<Image
@@ -88,7 +89,8 @@ const About = () => {
 					</a>
 				</Flex>
 			</Stack>
-		</div>
+			<Divider pt={5} />
+		</Flex>
 	);
 };
 

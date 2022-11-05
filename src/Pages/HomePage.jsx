@@ -4,7 +4,6 @@ import About from "../Components/About";
 import Experience from "../Components/Experience";
 import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
-import TechStack from "../Components/TechStack";
 import Testimonials from "../Components/Testimonials";
 import { VStack } from "@chakra-ui/react";
 import Calendar from "../Components/Calendar";
@@ -18,9 +17,8 @@ const HomePage = () => {
 			</div>
 			<VStack className="container" gap={5} w="100%" pb="10">
 				<About />
-				{/* <TechStack />
 				<Skills />
-				<Experience /> */}
+				{/* <Experience /> */}
 				<Projects />
 				<Calendar />
 				<Stats />
