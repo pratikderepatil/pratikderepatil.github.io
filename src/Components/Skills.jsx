@@ -3,7 +3,13 @@ import React from "react";
 import { techstack } from "../Data/techstack.js";
 const Skills = () => {
 	return (
-		<Flex id="Skills" flexDirection={"column"} w="100%" alignItems="center">
+		<Flex
+			id="Skills"
+			flexDirection={"column"}
+			w="100%"
+			alignItems="center"
+			bgColor="#FFFBEC"
+		>
 			<Center>
 				<Heading
 					size={["lg", "xl"]}
