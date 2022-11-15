@@ -1,4 +1,4 @@
-import { Center, Divider, Flex, Heading, Image } from "@chakra-ui/react";
+import { Center, Flex, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import { techstack } from "../Data/techstack.js";
 const Skills = () => {
@@ -9,6 +9,8 @@ const Skills = () => {
 			w="100%"
 			alignItems="center"
 			bgColor="#FFFBEC"
+			pt="5"
+			pb="5"
 		>
 			<Center>
 				<Heading
@@ -27,15 +29,14 @@ const Skills = () => {
 							alignItems="center"
 							flexDirection={"column"}
 						>
-							<Image src={tech.image} h={["16", "32"]} />
-							<Heading size={["md", "lg"]} pt={["4", "8"]}>
+							<Image src={tech.image} h={["12", "32"]} />
+							<Heading size={["sm", "lg"]} pt={["4", "8"]}>
 								{tech.language}
 							</Heading>
 						</Flex>
 					);
 				})}
 			</Flex>
-			<Divider pt="5" colorScheme={"yellow"} />
 		</Flex>
 	);
 };

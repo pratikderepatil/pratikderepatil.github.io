@@ -8,6 +8,7 @@ import Testimonials from "../Components/Testimonials";
 import { VStack } from "@chakra-ui/react";
 import Calendar from "../Components/Calendar";
 import Stats from "../Components/Stats";
+import Footer from "../Components/Footer";
 
 const HomePage = () => {
 	return (
@@ -15,14 +16,15 @@ const HomePage = () => {
 			<div className="fixed">
 				<Navbar />
 			</div>
-			<VStack className="container" gap={5} w="100%" pb="10">
+			<VStack className="container" w="100%">
 				<About />
 				<Skills />
-				{/* <Experience /> */}
+				<Experience />
 				<Projects />
 				<Calendar />
 				<Stats />
 				{/* <Testimonials /> */}
+				<Footer />
 			</VStack>
 		</>
 	);

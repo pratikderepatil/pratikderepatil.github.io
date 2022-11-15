@@ -21,8 +21,9 @@ const Stats = () => {
 				direction={["column", "row"]}
 				justifyContent="center"
 				alignItems={"center"}
-				rowGap={"4"}
+				rowGap={"2"}
 				columnGap={4}
+				pb="5"
 			>
 				<Image
 					align="left"

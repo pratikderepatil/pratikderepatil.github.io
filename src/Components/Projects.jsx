@@ -36,17 +36,15 @@ const Projects = () => {
 					Projects
 				</Heading>
 			</Center>
-			<SimpleGrid columns={[1, 2]} w={["90%"]} m="auto" gap={4}>
+			<SimpleGrid columns={1} w={["90%"]} m="auto" gap={4}>
 				{projects?.map((project) => {
 					return (
 						<Flex
-							borderWidth={1}
-							direction="column"
+							direction={["column", "row"]}
 							key={project.projectname}
 							m="auto"
-							borderRadius={10}
 						>
-							<Box>
+							<Box w={["full", "50%"]}>
 								<Carousel autoPlay="true" infiniteLoop="true">
 									{project.projectimages?.map((image) => {
 										return (
@@ -57,7 +55,16 @@ const Projects = () => {
 									})}
 								</Carousel>
 							</Box>
-							<Flex direction={"column"} gap={3} p="3" mt="-10">
+							<Flex
+								direction={"column"}
+								gap={3}
+								p="3"
+								w={["full", "50%"]}
+								mt={["-8", "-3"]}
+							>
+								<Heading size={["md", "lg"]} style={{ color: "#FFDE59" }}>
+									{project.projectname}
+								</Heading>
 								<Flex gap={3} wrap={"wrap"}>
 									{project.tags?.map((tag) => {
 										return (
@@ -76,9 +83,6 @@ const Projects = () => {
 										);
 									})}
 								</Flex>
-								<Heading size={["md", "lg"]} style={{ color: "#FFDE59" }}>
-									{project.projectname}
-								</Heading>
 								<Text fontSize={["md", "lg"]}>{project.description}</Text>
 								<SimpleGrid columns={[1, 2]}>
 									<Flex direction={"column"}>
