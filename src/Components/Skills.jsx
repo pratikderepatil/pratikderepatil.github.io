@@ -29,8 +29,8 @@ const Skills = () => {
 							alignItems="center"
 							flexDirection={"column"}
 						>
-							<Image src={tech.image} h={["12", "32"]} />
-							<Heading size={["sm", "lg"]} pt={["4", "8"]}>
+							<Image src={tech.image} h={["12", "24"]} />
+							<Heading size={["sm", "md"]} pt={["4", "8"]}>
 								{tech.language}
 							</Heading>
 						</Flex>

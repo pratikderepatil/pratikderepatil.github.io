@@ -19,7 +19,7 @@ const HomePage = () => {
 			<VStack className="container" w="100%">
 				<About />
 				<Skills />
-				<Experience />
+				{/* <Experience /> */}
 				<Projects />
 				<Calendar />
 				<Stats />

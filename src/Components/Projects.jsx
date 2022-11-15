@@ -43,6 +43,7 @@ const Projects = () => {
 							direction={["column", "row"]}
 							key={project.projectname}
 							m="auto"
+							gap={["0", "4"]}
 						>
 							<Box w={["full", "50%"]}>
 								<Carousel autoPlay="true" infiniteLoop="true">

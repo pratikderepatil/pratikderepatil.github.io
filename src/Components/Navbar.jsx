@@ -48,7 +48,6 @@ const Navbar = () => {
 	return (
 		<>
 			<Flex
-				p={4}
 				pl={[4, 8]}
 				justifyContent="space-between"
 				mb={0}
