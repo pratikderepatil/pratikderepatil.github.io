@@ -9,6 +9,7 @@ import { VStack } from "@chakra-ui/react";
 import Calendar from "../Components/Calendar";
 import Stats from "../Components/Stats";
 import Footer from "../Components/Footer";
+import Contact from "../Components/Contact";
 
 const HomePage = () => {
 	return (
@@ -24,6 +25,7 @@ const HomePage = () => {
 				<Calendar />
 				<Stats />
 				{/* <Testimonials /> */}
+				<Contact />
 				<Footer />
 			</VStack>
 		</>

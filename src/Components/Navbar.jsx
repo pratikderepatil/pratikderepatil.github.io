@@ -30,10 +30,6 @@ const Navbar = () => {
 			px={2}
 			py={1}
 			rounded={"md"}
-			_hover={{
-				textDecoration: "none",
-				bg: useColorModeValue("gray.200", "gray.700"),
-			}}
 			activeClass="active"
 			to={children}
 			spy={true}
@@ -51,6 +47,7 @@ const Navbar = () => {
 				pl={[4, 8]}
 				justifyContent="space-between"
 				mb={0}
+				p={3}
 				display={{ base: "none", lg: "flex" }}
 				bgColor="#FFFBEC"
 			>
@@ -103,7 +100,7 @@ const Navbar = () => {
 						</Button>
 					</Box>
 				</HStack>
-				<Image src={logo} w={["50%", "50%", "30%", "20%"]} />
+				<Image src={logo} w={["50%", "50%", "30%", "18%"]} />
 			</Flex>
 			<Flex
 				p={4}
