@@ -10,7 +10,6 @@ import {
 	Flex,
 	HStack,
 	Image,
-	useColorModeValue,
 	useDisclosure,
 	VStack,
 } from "@chakra-ui/react";

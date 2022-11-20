@@ -72,8 +72,7 @@ const About = () => {
 						{aboutme.summary}
 					</Text>
 					<a
-						href="https://drive.google.com/file/d/1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD/"
-						target="_blank"
+						href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
 						rel="noreferrer"
 					>
 						<Button

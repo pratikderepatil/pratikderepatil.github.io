@@ -160,7 +160,7 @@ export default function Contact() {
 												/>
 											</InputGroup>
 										</FormControl>
-										<FormControl isRequired>
+										<FormControl isRequired pt={3}>
 											<FormLabel>Email</FormLabel>
 											<InputGroup>
 												<InputLeftElement children={<MdOutlineEmail />} />
@@ -179,7 +179,7 @@ export default function Contact() {
 												/>
 											</InputGroup>
 										</FormControl>
-										<FormControl isRequired>
+										<FormControl isRequired pt={3}>
 											<FormLabel>Message</FormLabel>
 											<Textarea
 												onPaste={(e) => {
