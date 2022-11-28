@@ -36,7 +36,7 @@ const Projects = () => {
 					Projects
 				</Heading>
 			</Center>
-			<SimpleGrid columns={1} w={["90%"]} m="auto" gap={4}>
+			<SimpleGrid columns={1} w={["90%"]} m="auto" gap={[4, 8]} h="100%">
 				{projects?.map((project) => {
 					return (
 						<Flex
@@ -63,7 +63,7 @@ const Projects = () => {
 								w={["full", "50%"]}
 								mt={["-8", "-3"]}
 							>
-								<Heading size={["md", "lg"]} style={{ color: "#FFDE59" }}>
+								<Heading size={["md", "lg"]} style={{ color: "#FFB005" }}>
 									{project.projectname}
 								</Heading>
 								<Flex gap={3} wrap={"wrap"}>
@@ -85,9 +85,15 @@ const Projects = () => {
 									})}
 								</Flex>
 								<Text fontSize={["md", "lg"]}>{project.description}</Text>
-								<SimpleGrid columns={[1, 2]}>
+								<SimpleGrid
+									columns={[1, 2]}
+									gap={["2", "4"]}
+									justifyContent={"space-between"}
+									grid-template-columns="repeat(auto-fill, minmax(120px, 1fr))"
+									grid-template-rows="masonry"
+								>
 									<Flex direction={"column"}>
-										<Text fontSize={["md", "lg"]} as="b">
+										<Text fontSize={["md", "lg"]} as="b" w="full">
 											Features:
 										</Text>
 										<UnorderedList pl={4}>
@@ -99,7 +105,7 @@ const Projects = () => {
 									{project.areaofresponsibility === null ? (
 										<></>
 									) : (
-										<Flex direction={"column"}>
+										<Flex direction={"column"} w="full">
 											<Text fontSize={["md", "lg"]} as="b">
 												Area of Responsibility:
 											</Text>
