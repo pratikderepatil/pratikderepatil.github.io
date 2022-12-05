@@ -1,4 +1,5 @@
 import {
+	Box,
 	Button,
 	Flex,
 	Heading,
@@ -7,23 +8,62 @@ import {
 	Text,
 	useBreakpointValue,
 } from "@chakra-ui/react";
-import React from "react";
-import profile from "../Data/images/profile.png";
-import { aboutme } from "../Data/aboutme";
 import Typed from "react-typed";
+import React from "react";
+import { aboutme } from "../Data/aboutme";
 
 const About = () => {
 	return (
 		<Flex id="About" flexDirection={"column"} pb="5">
-			<Stack direction={{ base: "column", md: "row" }} id="About">
-				<Flex flex={1} alignItems="start" justifyContent={"start"}>
-					<Image
-						src={profile}
-						alt={"Login Image"}
-						objectFit={"cover"}
-						width={["full", "md"]}
-					/>
-				</Flex>
+			<Stack direction={{ base: "column", md: "row" }} id="Home">
+				<Stack flex={1} alignItems="center" justifyContent={"center"}>
+					<Flex w="30%" flexDirection={"column"} gap="5">
+						<a
+							rel="noreferrer"
+							href="https://www.linkedin.com/in/pratik-derepatil/"
+							target="_blank"
+						>
+							<Image
+								width={["sm", "md"]}
+								src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+								alt="Linkedin"
+							/>
+						</a>
+						<a
+							rel="noreferrer"
+							href="https://pratikderepatil.github.io/"
+							target="_blank"
+						>
+							<Image
+								width={["sm", "md"]}
+								src="https://img.shields.io/badge/Portfolio-FF3850?style=for-the-badge&logo=Linkfire&logoColor=white"
+								alt="Portfolio"
+							/>
+						</a>
+						<a
+							rel="noreferrer"
+							href="mailto:pratikdere333@gmail.com"
+							target="_blank"
+						>
+							<Image
+								width={["sm", "md"]}
+								src="https://img.shields.io/badge/Pratik%20Derepatil-EA4335?style=for-the-badge&logo=gmail&logoColor=white"
+								alt="Gmail"
+							/>
+						</a>
+						<a
+							href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image
+								width={["sm", "md"]}
+								src="https://img.shields.io/badge/Resume-ffb005?style=for-the-badge&logo=Google%20Drive&logoColor=black&?labelColor=white"
+								alt="Resume"
+							/>
+						</a>
+					</Flex>
+				</Stack>
 				<Flex
 					w={["", "60%"]}
 					direction="column"

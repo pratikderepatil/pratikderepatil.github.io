@@ -12,6 +12,8 @@ import {
 	Text,
 	UnorderedList,
 } from "@chakra-ui/react";
+// https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=Github
+// https://img.shields.io/badge/Deployment-FF3850?style=for-the-badge&logo=Linkfire&logoColor=white
 import { projects } from "../Data/projects";
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -123,24 +125,16 @@ const Projects = () => {
 										target="_blank"
 										rel="noreferrer"
 									>
-										<Button
-											size={["sm", "md"]}
-											variant={"outline"}
-											colorScheme="blackAlpha"
-											rightIcon={<AiOutlineLink />}
-										>
-											Deployment
-										</Button>
+										<Image
+											size={["sm", "lg"]}
+											src="https://img.shields.io/badge/Deployment-FF3850?style=for-the-badge&logo=Linkfire&logoColor=white"
+										/>
 									</a>
 									<a href={project.githublink} target="_blank" rel="noreferrer">
-										<Button
-											size={["sm", "md"]}
-											colorScheme="blackAlpha"
-											variant={"outline"}
-											rightIcon={<AiOutlineGithub />}
-										>
-											GitHub
-										</Button>
+										<Image
+											size={["sm", "lg"]}
+											src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=Github"
+										/>
 									</a>
 								</Flex>
 							</Flex>
