@@ -1,69 +1,43 @@
 import {
-	Box,
 	Button,
+	Center,
 	Flex,
 	Heading,
-	Image,
+	IconButton,
+	Link,
 	Stack,
 	Text,
+	Tooltip,
 	useBreakpointValue,
+	useClipboard,
+	useColorModeValue,
 } from "@chakra-ui/react";
+import { BsGithub, BsLinkedin, BsMedium } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
+
 import Typed from "react-typed";
 import React from "react";
 import { aboutme } from "../Data/aboutme";
 
 const About = () => {
+	const { hasCopied, onCopy } = useClipboard("pratikdere333@gmail.com");
+
 	return (
 		<Flex id="About" flexDirection={"column"} pb="5">
-			<Stack direction={{ base: "column", md: "row" }} id="Home">
-				<Stack flex={1} alignItems="center" justifyContent={"center"}>
-					<Flex w="30%" flexDirection={"column"} gap="5">
-						<a
-							rel="noreferrer"
-							href="https://www.linkedin.com/in/pratik-derepatil/"
-							target="_blank"
-						>
-							<Image
-								width={["sm", "md"]}
-								src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
-								alt="Linkedin"
-							/>
-						</a>
-						<a
-							rel="noreferrer"
-							href="https://pratikderepatil.github.io/"
-							target="_blank"
-						>
-							<Image
-								width={["sm", "md"]}
-								src="https://img.shields.io/badge/Portfolio-FF3850?style=for-the-badge&logo=Linkfire&logoColor=white"
-								alt="Portfolio"
-							/>
-						</a>
-						<a
-							rel="noreferrer"
-							href="mailto:pratikdere333@gmail.com"
-							target="_blank"
-						>
-							<Image
-								width={["sm", "md"]}
-								src="https://img.shields.io/badge/Pratik%20Derepatil-EA4335?style=for-the-badge&logo=gmail&logoColor=white"
-								alt="Gmail"
-							/>
-						</a>
-						<a
-							href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<Image
-								width={["sm", "md"]}
-								src="https://img.shields.io/badge/Resume-ffb005?style=for-the-badge&logo=Google%20Drive&logoColor=black&?labelColor=white"
-								alt="Resume"
-							/>
-						</a>
-					</Flex>
-				</Stack>
+			<Center>
+				<Heading
+					size={["lg", "xl"]}
+					style={{ color: "#FFB005" }}
+					pb={["5", "10"]}
+				>
+					About
+				</Heading>
+			</Center>
+			<Stack
+				direction={{ base: "column", md: "row" }}
+				id="Home"
+				justifyContent={"space-between"}
+			>
 				<Flex
 					w={["", "60%"]}
 					direction="column"
@@ -126,6 +100,87 @@ const About = () => {
 						</Button>
 					</a>
 				</Flex>
+				<Stack
+					align="center"
+					justify="space-around"
+					direction={{ base: "row", md: "column" }}
+					pr={[0, 20]}
+					pl={[0, 20]}
+					pt={[5, 0]}
+				>
+					<Tooltip
+						label={hasCopied ? "Email Copied!" : "Copy Email"}
+						closeOnClick={false}
+						hasArrow
+					>
+						<IconButton
+							aria-label="email"
+							variant="ghost"
+							size="lg"
+							fontSize="3xl"
+							icon={<MdEmail />}
+							_hover={{
+								bg: "yellow.500",
+								color: useColorModeValue("white", "gray.700"),
+							}}
+							onClick={onCopy}
+							isRound
+						/>
+					</Tooltip>
+
+					<Link target="_blank" href="https://github.com/pratikderepatil">
+						<Tooltip label="GitHub" hasArrow>
+							<IconButton
+								aria-label="github"
+								variant="ghost"
+								size={"lg"}
+								fontSize="3xl"
+								icon={<BsGithub />}
+								_hover={{
+									bg: "yellow.500",
+									color: useColorModeValue("white", "gray.700"),
+								}}
+								isRound
+							/>
+						</Tooltip>
+					</Link>
+
+					<Link target="_blank" href="https://medium.com/@pd_13">
+						<Tooltip label="Medium" hasArrow>
+							<IconButton
+								aria-label="medium"
+								variant="ghost"
+								size={"lg"}
+								fontSize="3xl"
+								icon={<BsMedium />}
+								_hover={{
+									bg: "yellow.500",
+									color: useColorModeValue("white", "gray.700"),
+								}}
+								isRound
+							/>
+						</Tooltip>
+					</Link>
+
+					<Link
+						target="_blank"
+						href="https://www.linkedin.com/in/pratik-derepatil/"
+					>
+						<Tooltip label="LinkedIn" hasArrow>
+							<IconButton
+								aria-label="linkedin"
+								variant="ghost"
+								size="lg"
+								icon={<BsLinkedin size="28px" />}
+								_hover={{
+									bg: "yellow.500",
+									color: useColorModeValue("white", "gray.700"),
+								}}
+								isRound
+							/>
+						</Tooltip>
+					</Link>
+				</Stack>
 			</Stack>
 		</Flex>
 	);
