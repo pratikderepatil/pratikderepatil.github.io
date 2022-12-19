@@ -1,5 +1,46 @@
 export const projects = [
 	{
+		projectname: "Glamour",
+		projectimages: [
+			"https://i.postimg.cc/yYfT1Gfb/Responsive.png",
+			"https://i.postimg.cc/g0hyK2GC/home.png",
+			"https://i.postimg.cc/TY29Xxcb/user-Dashboard.png",
+			"https://i.postimg.cc/rp7n8Hpk/add-Product.png",
+			"https://i.postimg.cc/3N1FDf3W/category.png",
+			"https://i.postimg.cc/pVJZ7rKx/product.png",
+			"https://i.postimg.cc/6qthqxJD/cart.png",
+			"https://i.postimg.cc/MGf5rYmr/checkout.png",
+			"https://i.postimg.cc/SxT1PRFj/payment.png",
+		],
+		description:
+			"Glamour is an Indian e-commerce company that sells cosmetics and personal care products. ",
+		deploymentlink: "glamour-ashy.vercel.app/",
+		githublink: "https://github.com/pratikderepatil/Glamour",
+		techstack: [
+			"Axios",
+			"JavaScript",
+			"React JS",
+			"MongoDB",
+			"Node JS",
+			"Chakra UI",
+		],
+		tags: ["E-commerce", "Collaborative"],
+		features: [
+			"All pages are Responsive",
+			"Login and Signup ",
+			"Role Based Dashboard",
+			"Admin can approve or reject the seller",
+			"Sort products based on categories, price",
+			"Add/Remove Products to cart",
+		],
+		areaofresponsibility: [
+			"Login and Signup Based on role (Admin, Customer, Seller)",
+			"Role Based Dashboard",
+			"Admin can approve or reject the seller",
+			"Admin can view all customers and sellers",
+		],
+	},
+	{
 		projectname: "Top Survey",
 		projectimages: [
 			"https://i.postimg.cc/PxpDqY17/homepage.png",
@@ -14,9 +55,9 @@ export const projects = [
 		deploymentlink: "https://topsurvey.vercel.app/",
 		githublink: "https://github.com/pratikderepatil/Top-Survey",
 		techstack: [
-			"CSS",
+			"Axios",
 			"JavaScript",
-			"HTML",
+			"MongoDB",
 			"React JS",
 			"Node JS",
 			"Chakra UI",
@@ -79,5 +120,24 @@ export const projects = [
 			"Signup and Contact sales page",
 			"Chatbot",
 		],
+	},
+	{
+		projectname: "KickStarter",
+		tags: ["Crowdfunding", "Individual"],
+
+		projectimages: [
+			"https://i.postimg.cc/pT6WCzRC/arts.png",
+			"https://i.postimg.cc/SssQcDFj/comics.png",
+			"https://i.postimg.cc/C5nFQ5Kg/games.png",
+			"https://i.postimg.cc/dVP0g2dS/login.png",
+			"https://i.postimg.cc/g2V0pxHc/signup.png",
+		],
+		description:
+			"Kickstarter campaigns make ideas into reality. It’s where creators share new visions for creative work with the communities that will come together to fund them.",
+		deploymentlink: "kickstarter-clone-three.vercel.app/",
+		githublink: "https://github.com/pratikderepatil/Kick-Starter",
+		techstack: ["Chakra UI", "JavaScript", "React JS"],
+		features: ["Signup and Login page", "Landing Page", "Pagination"],
+		areaofresponsibility: null,
 	},
 ];

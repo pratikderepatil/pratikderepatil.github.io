@@ -95,6 +95,9 @@ const About = () => {
 							color="black"
 							variant={"solid"}
 							colorScheme="yellow"
+							onClick={
+								"https://drive.google.com/file/d/1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD/view?usp=sharing"
+							}
 						>
 							Resume
 						</Button>
