@@ -17,6 +17,7 @@ export const experience = [
 		description: [
 			"Provide project updates on a consistent basis to various stakeholders about strategy and progress. ",
 			"Understand business requirements, validate the feasibility and translate them into technical requirements.",
+			"Edit a variety of digital content as needed, including marketing pages, informational content, contextual help, alert messages and FAQs using AEM (Adobe Experience Manager) ",
 		],
 		link: "https://drive.google.com/file/d/1QFpThzNUogdPH7XUD29L5labHLorCHZd",
 	},
@@ -27,7 +28,8 @@ export const experience = [
 		logo: true,
 
 		description: [
-			"Creating a working prototype for children to learn coding languages, and programming (Virtual classroom).",
+			"A web platform to learn programming concepts. Creating a proper working system using blocks with drag and drop functionality with proper animination",
+			"Technologies: Blockly, React JS, Phaser JS",
 		],
 		link: "https://drive.google.com/file/d/1CImUIasKJW1bfI3eIGo6k7vG052pW3nw",
 	},

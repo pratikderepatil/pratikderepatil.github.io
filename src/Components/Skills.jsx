@@ -8,7 +8,6 @@ const Skills = () => {
 			flexDirection={"column"}
 			w="100%"
 			alignItems="center"
-			bgColor="#FFFBEC"
 			pt="5"
 			pb="5"
 		>

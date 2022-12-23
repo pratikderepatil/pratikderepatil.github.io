@@ -23,7 +23,9 @@ const Experience = () => {
 			id="Experience"
 			flexDirection={"column"}
 			p={["2%", "auto"]}
-			w={["90%", "80%"]}
+			bgColor="#FFFBEC"
+			w="full"
+			pt="5"
 		>
 			<Center>
 				<Heading size={["lg", "xl"]} pb={["5", "10"]}>
@@ -37,7 +39,7 @@ const Experience = () => {
 						<VerticalTimelineElement
 							key={ele.title}
 							className="vertical-timeline-element--education"
-							contentStyle={{ background: "#FFFBEC", color: "#FFB005" }}
+							contentStyle={{ background: "", color: "" }}
 							contentArrowStyle={{
 								borderRight: "16px solid  #FFB005",
 							}}

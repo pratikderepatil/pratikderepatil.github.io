@@ -50,14 +50,8 @@ export default function Contact() {
 	};
 
 	return (
-		<Flex
-			w="100%"
-			bgColor={"#FFFBEC"}
-			align="center"
-			justify="center"
-			id="Contact"
-		>
-			<Box borderRadius="lg" p={5}>
+		<Flex w="100%" align="center" justify="center" id="Contact">
+			<Box borderRadius="lg" p={3}>
 				<Box>
 					<VStack spacing={3}>
 						<Center>
@@ -146,6 +140,7 @@ export default function Contact() {
 											<InputGroup>
 												<InputLeftElement children={<BsPerson />} />
 												<Input
+													required
 													onPaste={(e) => {
 														e.preventDefault();
 														return false;
@@ -173,6 +168,7 @@ export default function Contact() {
 														e.preventDefault();
 														return false;
 													}}
+													required
 													type="email"
 													name="from_name"
 													placeholder="Your Email"
@@ -186,6 +182,7 @@ export default function Contact() {
 													e.preventDefault();
 													return false;
 												}}
+												required
 												onCopy={(e) => {
 													e.preventDefault();
 													return false;

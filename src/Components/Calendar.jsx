@@ -2,6 +2,7 @@ import { Box, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
+import Stats from "./Stats";
 
 const Calendar = () => {
 	const selectLastHalfYear = (contributions) => {
@@ -22,15 +23,18 @@ const Calendar = () => {
 	};
 	return (
 		<Flex
+			bgColor="#FFFBEC"
+			w="full"
 			alignItems={"center"}
 			justifyContent="center"
 			direction="column"
 			p={["2%", "auto"]}
+			pt="5"
 		>
 			<Heading size={["lg", "xl"]} pb={["5", "10"]}>
 				Days I <span style={{ color: "#FFB005" }}>Code</span>
 			</Heading>
-			<Box p={"3%"} borderWidth="1px" borderRadius="lg">
+			<Box p={"3%"} borderWidth="1px" borderRadius="lg" w={["90%", "auto"]}>
 				<GitHubCalendar
 					username="pratikderepatil"
 					transformData={selectLastHalfYear}
@@ -44,6 +48,7 @@ const Calendar = () => {
 					<ReactTooltip delayShow={20} html />
 				</GitHubCalendar>
 			</Box>
+			<Stats />
 		</Flex>
 	);
 };
