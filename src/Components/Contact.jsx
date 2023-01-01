@@ -14,7 +14,6 @@ import {
 	Textarea,
 	Tooltip,
 	useToast,
-	useClipboard,
 	useColorModeValue,
 	VStack,
 	Center,
@@ -26,7 +25,6 @@ import emailjs from "@emailjs/browser";
 
 export default function Contact() {
 	const toast = useToast();
-	const { hasCopied, onCopy } = useClipboard("pratikdere333@gmail.com");
 	const form = useRef();
 
 	const sendEmail = (e) => {
@@ -73,56 +71,57 @@ export default function Contact() {
 								justify="space-around"
 								direction={{ base: "row", md: "column" }}
 							>
-								<Tooltip
-									label={hasCopied ? "Email Copied!" : "Copy Email"}
-									closeOnClick={false}
-									hasArrow
-								>
-									<IconButton
-										aria-label="email"
-										variant="ghost"
-										size="lg"
-										fontSize="3xl"
-										icon={<MdEmail />}
-										_hover={{
-											bg: "yellow.500",
-											color: useColorModeValue("white", "gray.700"),
-										}}
-										onClick={onCopy}
-										isRound
-									/>
-								</Tooltip>
+								<Link target="_blank" href="mailto:pratikdere333@gmail.com">
+									<Tooltip label="Mail" hasArrow>
+										<IconButton
+											aria-label="email"
+											variant="ghost"
+											size="lg"
+											fontSize="3xl"
+											icon={<MdEmail />}
+											_hover={{
+												bg: "yellow.500",
+												color: useColorModeValue("white", "gray.700"),
+											}}
+											isRound
+										/>
+									</Tooltip>
+								</Link>
 
 								<Link target="_blank" href="https://github.com/pratikderepatil">
-									<IconButton
-										aria-label="github"
-										variant="ghost"
-										size={"lg"}
-										fontSize="3xl"
-										icon={<BsGithub />}
-										_hover={{
-											bg: "yellow.500",
-											color: useColorModeValue("white", "gray.700"),
-										}}
-										isRound
-									/>
+									<Tooltip label="GitHub" hasArrow>
+										<IconButton
+											aria-label="github"
+											variant="ghost"
+											size={"lg"}
+											fontSize="3xl"
+											icon={<BsGithub />}
+											_hover={{
+												bg: "yellow.500",
+												color: useColorModeValue("white", "gray.700"),
+											}}
+											isRound
+										/>
+									</Tooltip>
 								</Link>
 
 								<Link
 									target="_blank"
 									href="https://www.linkedin.com/in/pratik-derepatil/"
 								>
-									<IconButton
-										aria-label="linkedin"
-										variant="ghost"
-										size="lg"
-										icon={<BsLinkedin size="28px" />}
-										_hover={{
-											bg: "yellow.500",
-											color: useColorModeValue("white", "gray.700"),
-										}}
-										isRound
-									/>
+									<Tooltip label="LinkedIn" hasArrow>
+										<IconButton
+											aria-label="linkedin"
+											variant="ghost"
+											size="lg"
+											icon={<BsLinkedin size="28px" />}
+											_hover={{
+												bg: "yellow.500",
+												color: useColorModeValue("white", "gray.700"),
+											}}
+											isRound
+										/>
+									</Tooltip>
 								</Link>
 							</Stack>
 

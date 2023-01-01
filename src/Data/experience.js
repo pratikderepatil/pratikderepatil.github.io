@@ -28,7 +28,7 @@ export const experience = [
 		logo: true,
 
 		description: [
-			"A web platform to learn programming concepts. Creating a proper working system using blocks with drag and drop functionality with proper animination",
+			"Creating a web platform to learn programming concepts using blocks with drag-and-drop functionality with decent animation",
 			"Technologies: Blockly, React JS, Phaser JS",
 		],
 		link: "https://drive.google.com/file/d/1CImUIasKJW1bfI3eIGo6k7vG052pW3nw",

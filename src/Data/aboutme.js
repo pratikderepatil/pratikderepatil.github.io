@@ -1,6 +1,6 @@
 export const aboutme = {
 	name: "Pratik Derepatil",
 	summary:
-		"Self-motivated and creative full-stack developer. Interested in building innovative and attractive websites. Curious to work with an exciting company to develop full-fledged interactive products.",
-	role: "Full Stack Developer",
+		"A Skilled MERN-Stack developer and quick learner who adapts quickly to the new environment. Looking for a challenging role in the industry to utilize skills and learnings.",
+	role: "Full Stack Web Developer",
 };

@@ -1,5 +1,6 @@
 import {
 	Box,
+	Button,
 	Center,
 	Divider,
 	Flex,
@@ -7,6 +8,7 @@ import {
 	Image,
 	ListItem,
 	SimpleGrid,
+	Stack,
 	Tag,
 	TagLabel,
 	Text,
@@ -15,11 +17,16 @@ import {
 // https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=Github
 // https://img.shields.io/badge/Deployment-FF3850?style=for-the-badge&logo=Linkfire&logoColor=white
 import { projects } from "../Data/projects";
-import React from "react";
+import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { MdExpandLess, MdExpandMore } from "react-icons/md";
 
 const Projects = () => {
+	let [show, setShow] = useState(2);
+	const handleshow = () => {
+		show === 2 ? setShow(7) : setShow(2);
+	};
 	return (
 		<Flex flexDirection={"column"} id="Projects" pt="5" pb="5">
 			<Center>
@@ -33,14 +40,9 @@ const Projects = () => {
 			</Center>
 			<SimpleGrid columns={1} w={["90%"]} m="auto" gap={[4, 4]} h="100%">
 				{projects?.map((project, i) => {
-					return (
-						<>
-							<Flex
-								direction={["column", "row"]}
-								key={project.projectname}
-								m="auto"
-								gap={["0", "4"]}
-							>
+					return i < show ? (
+						<Stack key={project.projectname}>
+							<Flex direction={["column", "row"]} m="auto" gap={["0", "4"]}>
 								<Box w={["full", "50%"]}>
 									<Carousel
 										autoPlay="true"
@@ -147,9 +149,21 @@ const Projects = () => {
 							) : (
 								<Divider colorScheme={"yellow"} borderWidth="5" mb={[2, 4]} />
 							)}
-						</>
+						</Stack>
+					) : (
+						<></>
 					);
 				})}
+				<Flex justifyContent={"right"}>
+					<Button
+						variant={"link"}
+						colorScheme="yellow"
+						rightIcon={show === 2 ? <MdExpandMore /> : <MdExpandLess />}
+						onClick={handleshow}
+					>
+						{show === 2 ? "Show More" : "Show Less"}
+					</Button>
+				</Flex>
 			</SimpleGrid>
 		</Flex>
 	);

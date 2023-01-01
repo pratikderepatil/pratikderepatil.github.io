@@ -1,4 +1,5 @@
 import {
+	Button,
 	Center,
 	Flex,
 	Heading,
@@ -13,19 +14,24 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experience } from "../Data/experience";
-import { MdWork } from "react-icons/md";
+import { MdWork, MdExpandMore, MdExpandLess } from "react-icons/md";
 import { BsLink45Deg, BsFillStarFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
+import { useState } from "react";
 
 const Experience = () => {
+	let [show, setShow] = useState(3);
+	const handleshow = () => {
+		show === 3 ? setShow(7) : setShow(3);
+	};
 	return (
 		<Flex
 			id="Experience"
 			flexDirection={"column"}
 			p={["2%", "auto"]}
 			bgColor="#FFFBEC"
-			w="full"
 			pt="5"
+			w="full"
 		>
 			<Center>
 				<Heading size={["lg", "xl"]} pb={["5", "10"]}>
@@ -34,8 +40,8 @@ const Experience = () => {
 			</Center>
 
 			<VerticalTimeline lineColor={"#FFB005"}>
-				{experience.map((ele) => {
-					return (
+				{experience.map((ele, i) => {
+					return i < show ? (
 						<VerticalTimelineElement
 							key={ele.title}
 							className="vertical-timeline-element--education"
@@ -76,8 +82,20 @@ const Experience = () => {
 								</Text>
 							</Flex>
 						</VerticalTimelineElement>
+					) : (
+						<></>
 					);
 				})}
+				<Flex justifyContent={"right"}>
+					<Button
+						variant={"link"}
+						colorScheme="yellow"
+						rightIcon={show === 3 ? <MdExpandMore /> : <MdExpandLess />}
+						onClick={handleshow}
+					>
+						{show === 3 ? "Show More" : "Show Less"}
+					</Button>
+				</Flex>
 				<VerticalTimelineElement
 					iconStyle={{ background: "#FFFBEC", color: "#FFB005" }}
 					icon={<BsFillStarFill />}

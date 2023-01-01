@@ -2,26 +2,25 @@ import {
 	Center,
 	Flex,
 	Heading,
-	IconButton,
-	Link,
 	SimpleGrid,
 	Stack,
 	Text,
-	Tooltip,
-	useClipboard,
-	useColorModeValue,
+	Image,
 } from "@chakra-ui/react";
-import { BsGithub, BsLinkedin, BsMedium } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-import { AiOutlineSend } from "react-icons/ai";
+
+import {
+	SiNextdotjs,
+	SiNodedotjs,
+	SiTypescript,
+	SiReact,
+} from "react-icons/si";
+import profile from "../Data/images/profile1.png";
 
 import React from "react";
 
 const About = () => {
-	const { hasCopied, onCopy } = useClipboard("pratikdere333@gmail.com");
-
 	return (
-		<Flex id="About" flexDirection={"column"} pb="5" bgColor="#FFFBEC" pt="5">
+		<Flex id="About" flexDirection={"column"} pb="10" bgColor="#FFFBEC" pt="5">
 			<Center>
 				<Heading size={["lg", "xl"]} pb={["5", "10"]}>
 					About <span style={{ color: "#FFB005" }}>Me</span>
@@ -31,103 +30,29 @@ const About = () => {
 				<Stack
 					direction={{ base: "column", md: "row" }}
 					id="Home"
-					w={["100%", "80%"]}
+					w={["100%", "70%"]}
 					justifyContent="center"
+					alignItems={"center"}
+					gap={["5", "20"]}
 				>
-					<Stack
-						align="center"
-						justify="space-around"
-						direction={{ base: "row", md: "column" }}
-						pr={[0, 20]}
-						pl={[0, 20]}
-						pt={[3, 0]}
-						pb={[3, 0]}
-					>
-						<Tooltip
-							label={hasCopied ? "Email Copied!" : "Copy Email"}
-							closeOnClick={false}
-							hasArrow
-						>
-							<IconButton
-								aria-label="email"
-								variant="ghost"
-								size="lg"
-								fontSize="3xl"
-								icon={<MdEmail />}
-								_hover={{
-									bg: "yellow.500",
-									color: useColorModeValue("white", "gray.700"),
-								}}
-								onClick={onCopy}
-								isRound
-							/>
-						</Tooltip>
-
-						<Link target="_blank" href="https://github.com/pratikderepatil">
-							<Tooltip label="GitHub" hasArrow>
-								<IconButton
-									aria-label="github"
-									variant="ghost"
-									size={"lg"}
-									fontSize="3xl"
-									icon={<BsGithub />}
-									_hover={{
-										bg: "yellow.500",
-										color: useColorModeValue("white", "gray.700"),
-									}}
-									isRound
-								/>
-							</Tooltip>
-						</Link>
-
-						<Link target="_blank" href="https://medium.com/@pd_13">
-							<Tooltip label="Medium" hasArrow>
-								<IconButton
-									aria-label="medium"
-									variant="ghost"
-									size={"lg"}
-									fontSize="3xl"
-									icon={<BsMedium />}
-									_hover={{
-										bg: "yellow.500",
-										color: useColorModeValue("white", "gray.700"),
-									}}
-									isRound
-								/>
-							</Tooltip>
-						</Link>
-
-						<Link
-							target="_blank"
-							href="https://www.linkedin.com/in/pratik-derepatil/"
-						>
-							<Tooltip label="LinkedIn" hasArrow>
-								<IconButton
-									aria-label="linkedin"
-									variant="ghost"
-									size="lg"
-									icon={<BsLinkedin size="28px" />}
-									_hover={{
-										bg: "yellow.500",
-										color: useColorModeValue("white", "gray.700"),
-									}}
-									isRound
-								/>
-							</Tooltip>
-						</Link>
-					</Stack>
-
+					<Image
+						src={profile}
+						alt={"Image"}
+						objectFit={"cover"}
+						width={["60%", "30%"]}
+						height={["60%", "30%"]}
+						borderRadius="30"
+					/>
 					<Center>
 						<Flex
 							direction="column"
 							alignItems="start"
 							justifyContent={"center"}
-							pl="7"
-							pr="7"
+							width={["80%", "full"]}
 							gap={[2, 6]}
 						>
 							<Text
-								fontSize={["xl", "xl", "xl", "3xl"]}
+								fontSize={["xl", "xl", "xl", "2xl"]}
 								// pr={["", "10%", "6%", "15%"]}
 							>
 								Hi Everyone, I am <Text as="b">Pratik Derepatil</Text> from{" "}
@@ -137,25 +62,25 @@ const About = () => {
 								technology, especially <Text as="b">MERN Stack</Text>.
 							</Text>
 							<Text
-								fontSize={["xl", "xl", "xl", "3xl"]}
+								fontSize={["xl", "xl", "xl", "2xl"]}
 								pr={["", "10%", "6%", "15%"]}
 							>
 								Here are a few technologies I’ve been working with recently:
 								<SimpleGrid columns={2} mt={3} ml={[4, 10]}>
 									<Flex gap={3} alignItems={"center"}>
-										<AiOutlineSend />
+										<SiReact />
 										React JS
 									</Flex>
 									<Flex gap={3} alignItems={"center"}>
-										<AiOutlineSend />
+										<SiNodedotjs />
 										Node JS
 									</Flex>
 									<Flex gap={3} alignItems={"center"}>
-										<AiOutlineSend />
+										<SiNextdotjs />
 										Next JS
 									</Flex>
 									<Flex gap={3} alignItems={"center"}>
-										<AiOutlineSend />
+										<SiTypescript />
 										TypeScript
 									</Flex>
 								</SimpleGrid>
