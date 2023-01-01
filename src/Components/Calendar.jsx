@@ -5,22 +5,22 @@ import ReactTooltip from "react-tooltip";
 import Stats from "./Stats";
 
 const Calendar = () => {
-	const selectLastHalfYear = (contributions) => {
-		const currentYear = new Date().getFullYear();
-		const currentMonth = new Date().getMonth();
-		const shownMonths = 7;
+	// const selectLastHalfYear = (contributions) => {
+	// 	const currentYear = new Date().getFullYear();
+	// 	const currentMonth = new Date().getMonth();
+	// 	const shownMonths = 7;
 
-		return contributions.filter((day) => {
-			const date = new Date(day.date);
-			const monthOfDay = date.getMonth();
+	// 	return contributions.filter((day) => {
+	// 		const date = new Date(day.date);
+	// 		const monthOfDay = date.getMonth();
 
-			return (
-				date.getFullYear() === currentYear &&
-				monthOfDay > currentMonth - shownMonths &&
-				monthOfDay <= currentMonth
-			);
-		});
-	};
+	// 		return (
+	// 			date.getFullYear() === currentYear &&
+	// 			monthOfDay > currentMonth - shownMonths &&
+	// 			monthOfDay <= currentMonth
+	// 		);
+	// 	});
+	// };
 	return (
 		<Flex
 			bgColor="#FFFBEC"
@@ -37,7 +37,7 @@ const Calendar = () => {
 			<Box p={"3%"} borderWidth="1px" borderRadius="lg" w={["90%", "auto"]}>
 				<GitHubCalendar
 					username="pratikderepatil"
-					transformData={selectLastHalfYear}
+					// transformData={selectLastHalfYear}
 					hideColorLegend
 					blockSize={24}
 					fontSize={15}
