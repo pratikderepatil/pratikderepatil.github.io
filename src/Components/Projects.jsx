@@ -41,7 +41,7 @@ const Projects = () => {
 			<SimpleGrid columns={1} w={["90%"]} m="auto" gap={[4, 4]} h="100%">
 				{projects?.map((project, i) => {
 					return i < show ? (
-						<Stack key={project.projectname}>
+						<Stack key={project.projectname} pt="5">
 							<Flex direction={["column", "row"]} m="auto" gap={["0", "4"]}>
 								<Box w={["full", "50%"]}>
 									<Carousel

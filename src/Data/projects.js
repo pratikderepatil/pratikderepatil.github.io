@@ -137,7 +137,28 @@ export const projects = [
 		deploymentlink: "kickstarter-clone-three.vercel.app/",
 		githublink: "https://github.com/pratikderepatil/Kick-Starter",
 		techstack: ["Chakra UI", "JavaScript", "React JS"],
-		features: ["Signup and Login page", "Landing Page", "Pagination"],
+		features: ["Signup and Login page", "Landing Page", "Comming Soon page"],
 		areaofresponsibility: null,
+	},
+	{
+		projectname: "Deccan Herald",
+		projectimages: [
+			"https://i.postimg.cc/BvFYy0Wz/responsive.jpg",
+			"https://i.postimg.cc/rsjYJN6F/homepage.png",
+			"https://i.postimg.cc/Bb4VHwVV/loginpage.png",
+			"https://i.postimg.cc/W3MyDPXZ/newsletters.png",
+		],
+		description:
+			"Deccan Herald is an Indian English daily news site. We used HTML, CSS, JavaScript and jQuery in our project. We build this project to gather some real life experience.",
+		deploymentlink: "https://deccan-herald.netlify.app/",
+		githublink: "https://github.com/pratikderepatil/Deccan-Herald",
+		techstack: ["CSS", "JavaScript", "HTML"],
+		tags: ["Newspaper", "Collaborative"],
+		features: [
+			"News exploration with reponsive UI",
+			"User registration functionality",
+			"Categorized news sections",
+		],
+		areaofresponsibility: ["News exploration with reponsive UI"],
 	},
 ];

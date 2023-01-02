@@ -183,8 +183,9 @@ const Home = () => {
 							fontWeight={700}
 							lineHeight={1.2}
 							fontSize={useBreakpointValue({ base: "2xl", md: "4xl" })}
+							fontFamily="Dancing script"
 						>
-							"𝕺𝖓𝖑𝖞 𝖆 𝖋𝖆𝖎𝖑𝖚𝖗𝖊 𝖆𝖇𝖆𝖓𝖉𝖔𝖓𝖘 𝖍𝖎𝖘 𝖕𝖗𝖎𝖓𝖈𝖎𝖕𝖑𝖊𝖘 𝖆𝖓𝖉 𝖕𝖗𝖎𝖉𝖊."
+							❞ 𝑶𝒏𝒍𝒚 𝒂 𝒇𝒂𝒊𝒍𝒖𝒓𝒆 𝒂𝒃𝒂𝒏𝒅𝒐𝒏𝒔 𝒉𝒊𝒔 𝒑𝒓𝒊𝒏𝒄𝒊𝒑𝒍𝒆𝒔 𝒂𝒏𝒅 𝒑𝒓𝒊𝒅𝒆 ❞
 						</Text>
 						<Stack direction={"row"}>
 							<Link
