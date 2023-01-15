@@ -42,12 +42,7 @@ const Experience = () => {
 			<VerticalTimeline lineColor={"#FFB005"}>
 				{experience.map((ele, i) => {
 					return i < show ? (
-						i === experience.length - 1 ? (
-							<VerticalTimelineElement
-								iconStyle={{ background: "#FFFBEC", color: "#FFB005" }}
-								icon={<BsFillStarFill />}
-							/>
-						) : (
+						<>
 							<VerticalTimelineElement
 								key={ele.title}
 								className="vertical-timeline-element--education"
@@ -93,7 +88,15 @@ const Experience = () => {
 									</Text>
 								</Flex>
 							</VerticalTimelineElement>
-						)
+							{i === experience.length - 1 ? (
+								<VerticalTimelineElement
+									iconStyle={{ background: "#FFFBEC", color: "#FFB005" }}
+									icon={<BsFillStarFill />}
+								/>
+							) : (
+								<></>
+							)}
+						</>
 					) : (
 						<></>
 					);

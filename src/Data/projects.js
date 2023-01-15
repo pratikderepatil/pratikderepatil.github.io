@@ -14,7 +14,7 @@ export const projects = [
 		],
 		description:
 			"Glamour is an Indian e-commerce company that sells cosmetics and personal care products. ",
-		deploymentlink: "glamour-ashy.vercel.app/",
+		deploymentlink: "https://glamour-ashy.vercel.app/",
 		githublink: "https://github.com/pratikderepatil/Glamour",
 		techstack: [
 			"Axios",
@@ -134,7 +134,7 @@ export const projects = [
 		],
 		description:
 			"Kickstarter campaigns make ideas into reality. It’s where creators share new visions for creative work with the communities that will come together to fund them.",
-		deploymentlink: "kickstarter-clone-three.vercel.app/",
+		deploymentlink: "https://kickstarter-clone-three.vercel.app/",
 		githublink: "https://github.com/pratikderepatil/Kick-Starter",
 		techstack: ["Chakra UI", "JavaScript", "React JS"],
 		features: ["Signup and Login page", "Landing Page", "Comming Soon page"],

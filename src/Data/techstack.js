@@ -16,6 +16,18 @@ export const techstack = [
 		image: "https://i.postimg.cc/kgWvH9PL/REACTJS.png",
 	},
 	{
+		language: "Chakra UI",
+		image: "https://i.postimg.cc/Vs27fvGY/CHAKRAUI.jpg",
+	},
+	{
+		language: "Redux",
+		image: "https://i.postimg.cc/RFwPkRvj/REDUX.png",
+	},
+	{
+		language: "Typescript",
+		image: "https://i.postimg.cc/yNRXxykn/TYPESCRIPT.png",
+	},
+	{
 		language: "Node JS",
 		image: "https://i.postimg.cc/fTtKxm2z/NODEJS.png",
 	},
@@ -26,6 +38,10 @@ export const techstack = [
 	{
 		language: "VS Code",
 		image: "https://i.postimg.cc/nLZGb5Hr/VSCODE.png",
+	},
+	{
+		language: "Postman",
+		image: "https://i.postimg.cc/Jh7HV3jG/POSTMAN.webp",
 	},
 	{
 		language: "GitHub",

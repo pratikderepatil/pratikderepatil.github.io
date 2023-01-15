@@ -13,6 +13,7 @@ const Stats = () => {
 			>
 				GitHub Stats
 			</Heading>
+
 			<Image
 				align="left"
 				src="https://github-readme-streak-stats.herokuapp.com/?user=pratikderepatil&theme=vision-friendly-dark&dates=FFB005&currStreakNum=FFB005&background=FFFBEC&currStreakLabel=FFB005"
