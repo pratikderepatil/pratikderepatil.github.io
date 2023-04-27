@@ -26,7 +26,7 @@ const Experience = () => {
 	};
 	return (
 		<Flex
-			id="Experience"
+			id="experience"
 			flexDirection={"column"}
 			p={["2%", "auto"]}
 			bgColor="#FFFBEC"

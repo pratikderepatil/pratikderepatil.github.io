@@ -18,7 +18,7 @@ import React from "react";
 import logo from "../Data/images/name1.png";
 import { Link } from "react-scroll";
 
-const Links = ["Home", "About", "Skills", "Experience", "Projects", "Contact"];
+const Links = ["home", "about", "skills", "experience", "projects", "contact"];
 // https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download
 const Navbar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -49,6 +49,7 @@ const Navbar = () => {
 				p={3}
 				display={{ base: "none", lg: "flex" }}
 				bgColor="#FFFBEC"
+				id="nav-menu"
 			>
 				<HStack w={"75%"} gap={5} alignItems="left">
 					{Links.map((ele) => {
@@ -108,6 +109,7 @@ const Navbar = () => {
 				mb={0}
 				bgColor="#FFFBEC"
 				display={{ base: "flex", lg: "none" }}
+				id="nav-menu"
 			>
 				<Button size={"2xl"} variant="unstyled" onClick={onOpen}>
 					<TfiMenu w={10} />
