@@ -4,7 +4,7 @@ import { techstack } from "../Data/techstack.js";
 const Skills = () => {
 	return (
 		<Flex
-			id="Skills"
+			id="skills"
 			flexDirection={"column"}
 			w="100%"
 			alignItems="center"

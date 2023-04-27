@@ -20,7 +20,14 @@ import React from "react";
 
 const About = () => {
 	return (
-		<Flex id="About" flexDirection={"column"} pb="10" bgColor="#FFFBEC" pt="5">
+		<Flex
+			id="about"
+			class="about section"
+			flexDirection={"column"}
+			pb="10"
+			bgColor="#FFFBEC"
+			pt="5"
+		>
 			<Center>
 				<Heading size={["lg", "xl"]} pb={["5", "10"]}>
 					About <span style={{ color: "#FFB005" }}>Me</span>
