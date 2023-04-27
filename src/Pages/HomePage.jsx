@@ -24,8 +24,8 @@ const HomePage = () => {
 				<Experience />
 				<Projects />
 				<Calendar />
-				{/* <Testimonials /> */}
 				<Contact />
+				{/* <Testimonials /> */}
 				<Footer />
 			</VStack>
 		</>
