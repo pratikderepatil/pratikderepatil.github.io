@@ -20,7 +20,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
-import { MdEmail, MdOutlineEmail } from "react-icons/md";
+import { MdEmail, MdOutlineEmail, MdPhone } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -71,7 +71,11 @@ export default function Contact() {
 								justify="space-around"
 								direction={{ base: "row", md: "column" }}
 							>
-								<Link target="_blank" href="mailto:pratikdere333@gmail.com">
+								<Link
+									id="contact-email"
+									target="_blank"
+									href="mailto:pratikdere333@gmail.com"
+								>
 									<Tooltip label="Mail" hasArrow>
 										<IconButton
 											aria-label="email"
@@ -87,8 +91,32 @@ export default function Contact() {
 										/>
 									</Tooltip>
 								</Link>
+								<Link
+									id="contact-phone"
+									target="_blank"
+									href="tel:+917745081531"
+								>
+									<Tooltip label="Phone" hasArrow>
+										<IconButton
+											aria-label="phone"
+											variant="ghost"
+											size="lg"
+											fontSize="3xl"
+											icon={<MdPhone />}
+											_hover={{
+												bg: "yellow.500",
+												color: useColorModeValue("white", "gray.700"),
+											}}
+											isRound
+										/>
+									</Tooltip>
+								</Link>
 
-								<Link target="_blank" href="https://github.com/pratikderepatil">
+								<Link
+									id="contact-github"
+									target="_blank"
+									href="https://github.com/pratikderepatil"
+								>
 									<Tooltip label="GitHub" hasArrow>
 										<IconButton
 											aria-label="github"
@@ -107,6 +135,7 @@ export default function Contact() {
 
 								<Link
 									target="_blank"
+									id="contact-linkedin"
 									href="https://www.linkedin.com/in/pratik-derepatil/"
 								>
 									<Tooltip label="LinkedIn" hasArrow>

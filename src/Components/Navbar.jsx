@@ -43,13 +43,14 @@ const Navbar = () => {
 	return (
 		<>
 			<Flex
-				pl={[4, 8]}
+				w="full"
 				justifyContent="space-between"
-				mb={0}
-				p={3}
-				display={{ base: "none", lg: "flex" }}
+				p={6}
+				display={{ base: "none", xl: "flex" }}
 				bgColor="#FFFBEC"
 				id="nav-menu"
+				zIndex={18}
+				pos={"fixed"}
 			>
 				<HStack w={"75%"} gap={5} alignItems="left">
 					{Links.map((ele) => {
@@ -72,7 +73,10 @@ const Navbar = () => {
 									color="black"
 									variant={"unstyled"}
 								>
-									<NavLink key={ele}>{ele}</NavLink>
+									<NavLink key={ele}>
+										{ele.charAt(0).toUpperCase()}
+										{ele.slice(1)}
+									</NavLink>
 								</Button>
 							</Box>
 						);
@@ -104,12 +108,14 @@ const Navbar = () => {
 			</Flex>
 			<Flex
 				p={4}
-				pl={[4, 8]}
+				w="full"
 				justifyContent="space-between"
 				mb={0}
 				bgColor="#FFFBEC"
-				display={{ base: "flex", lg: "none" }}
+				display={{ base: "flex", xl: "none" }}
 				id="nav-menu"
+				pos={"fixed"}
+				zIndex={18}
 			>
 				<Button size={"2xl"} variant="unstyled" onClick={onOpen}>
 					<TfiMenu w={10} />
@@ -155,7 +161,10 @@ const Navbar = () => {
 												color="black"
 												variant={"unstyled"}
 											>
-												<NavLink key={ele}>{ele}</NavLink>
+												<NavLink key={ele}>
+													{ele.charAt(0).toUpperCase()}
+													{ele.slice(1)}
+												</NavLink>
 											</Button>
 										</Box>
 									);

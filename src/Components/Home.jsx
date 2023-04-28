@@ -24,7 +24,7 @@ const Home = () => {
 		<Flex
 			id="home"
 			flexDirection={"column"}
-			pt="10"
+			pt="14"
 			h={["80vh", "80vh", "80vh", "100vh"]}
 		>
 			<Flex

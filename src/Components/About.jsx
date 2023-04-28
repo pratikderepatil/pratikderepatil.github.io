@@ -43,6 +43,7 @@ const About = () => {
 					gap={["5", "20"]}
 				>
 					<Image
+						class="home-img"
 						src={profile}
 						alt={"Image"}
 						objectFit={"cover"}

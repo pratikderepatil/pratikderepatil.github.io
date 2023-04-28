@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
 import About from "../Components/About";
 import Experience from "../Components/Experience";
 import Projects from "../Components/Projects";
@@ -14,10 +13,7 @@ import Home from "../Components/Home";
 const HomePage = () => {
 	return (
 		<>
-			<div className="fixed">
-				<Navbar />
-			</div>
-			<VStack className="container" w="100%">
+			<VStack className="container" w="100%" pt="14">
 				<Home />
 				<About />
 				<Skills />
