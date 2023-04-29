@@ -24,7 +24,7 @@ const Home = () => {
 		<Flex
 			id="home"
 			flexDirection={"column"}
-			pt="14"
+			pt="28"
 			h={["80vh", "80vh", "80vh", "100vh"]}
 		>
 			<Flex
@@ -51,7 +51,7 @@ const Home = () => {
 						}}
 					>
 						Hi, I am{" "}
-						<Text color={"#FFB005"} as="span">
+						<Text color={"#FFB005"} as="span" id="user-detail-name">
 							Pratik Derepatil
 						</Text>
 					</Text>
@@ -67,7 +67,11 @@ const Home = () => {
 					</Text>
 				</Heading>
 
-				<Text fontSize={["lg", "lg", "lg", "2xl"]} textAlign="center">
+				<Text
+					fontSize={["lg", "lg", "lg", "2xl"]}
+					textAlign="center"
+					id="user-detail-intro"
+				>
 					{aboutme.summary}
 				</Text>
 			</Flex>

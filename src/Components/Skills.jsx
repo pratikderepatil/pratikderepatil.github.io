@@ -25,17 +25,17 @@ const Skills = () => {
 					return (
 						<Flex
 							key={tech.language}
-							class="skills-card"
+							className="skills-card"
 							alignItems="center"
 							flexDirection={"column"}
 						>
 							<Image
-								class="skills-card-img"
+								className="skills-card-img"
 								src={tech.image}
 								h={["12", "24"]}
 							/>
 							<Heading
-								class="skills-card-name"
+								className="skills-card-name"
 								size={["sm", "md"]}
 								pt={["4", "8"]}
 							>

@@ -9,22 +9,22 @@ import Calendar from "../Components/Calendar";
 import Footer from "../Components/Footer";
 import Contact from "../Components/Contact";
 import Home from "../Components/Home";
+import Navbar from "../Components/Navbar";
 
 const HomePage = () => {
 	return (
-		<>
-			<VStack className="container" w="100%" pt="14">
-				<Home />
-				<About />
-				<Skills />
-				<Experience />
-				<Projects />
-				<Calendar />
-				{/* <Testimonials /> */}
-				<Contact />
-				<Footer />
-			</VStack>
-		</>
+		<VStack className="container" w="100%">
+			<Navbar />
+			<Home />
+			<About />
+			<Skills />
+			<Experience />
+			<Projects />
+			<Calendar />
+			{/* <Testimonials /> */}
+			<Contact />
+			<Footer />
+		</VStack>
 	);
 };
 

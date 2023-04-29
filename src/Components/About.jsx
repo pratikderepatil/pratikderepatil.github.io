@@ -22,7 +22,7 @@ const About = () => {
 	return (
 		<Flex
 			id="about"
-			class="about section"
+			className="about section"
 			flexDirection={"column"}
 			pb="10"
 			bgColor="#FFFBEC"
@@ -43,7 +43,7 @@ const About = () => {
 					gap={["5", "20"]}
 				>
 					<Image
-						class="home-img"
+						className="home-img"
 						src={profile}
 						alt={"Image"}
 						objectFit={"cover"}

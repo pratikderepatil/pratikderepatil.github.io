@@ -38,7 +38,14 @@ const Projects = () => {
 					Projects
 				</Heading>
 			</Center>
-			<SimpleGrid columns={1} w={["90%"]} m="auto" gap={[4, 4]} h="100%">
+			<SimpleGrid
+				columns={1}
+				w={["90%"]}
+				m="auto"
+				gap={[4, 4]}
+				h="100%"
+				className="project-card"
+			>
 				{projects?.map((project, i) => {
 					return i < show ? (
 						<Stack key={project.projectname} pt="5">
@@ -66,7 +73,11 @@ const Projects = () => {
 									w={["full", "50%"]}
 									mt={["-8", "-3"]}
 								>
-									<Heading size={["md", "lg"]} style={{ color: "#FFB005" }}>
+									<Heading
+										size={["md", "lg"]}
+										style={{ color: "#FFB005" }}
+										className="project-title"
+									>
 										{project.projectname}
 									</Heading>
 									<Flex gap={3} wrap={"wrap"}>
@@ -78,7 +89,7 @@ const Projects = () => {
 											);
 										})}
 									</Flex>
-									<Flex gap={3} wrap={"wrap"}>
+									<Flex gap={3} wrap={"wrap"} className="project-tech-stack">
 										{project.techstack?.map((tag) => {
 											return (
 												<Tag key={tag} size={["md", "lg"]} colorScheme="gray">
@@ -87,7 +98,9 @@ const Projects = () => {
 											);
 										})}
 									</Flex>
-									<Text fontSize={["md", "lg"]}>{project.description}</Text>
+									<Text fontSize={["md", "lg"]} className="project-description">
+										{project.description}
+									</Text>
 									<SimpleGrid
 										columns={[1, 2]}
 										gap={["2", "4"]}
@@ -125,6 +138,7 @@ const Projects = () => {
 											href={project.deploymentlink}
 											target="_blank"
 											rel="noreferrer"
+											className="project-deployed-link"
 										>
 											<Image
 												size={["sm", "lg"]}
@@ -135,6 +149,7 @@ const Projects = () => {
 											href={project.githublink}
 											target="_blank"
 											rel="noreferrer"
+											className="project-github-link"
 										>
 											<Image
 												size={["sm", "lg"]}
