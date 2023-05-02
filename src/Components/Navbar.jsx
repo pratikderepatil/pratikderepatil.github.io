@@ -81,8 +81,7 @@ const Navbar = () => {
 									variant={"unstyled"}
 								>
 									<NavLink key={ele.id} className={ele.class}>
-										{ele.id.charAt(0).toUpperCase()}
-										{ele.id.slice(1)}
+										{ele.id}
 									</NavLink>
 								</Button>
 							</Box>
@@ -174,10 +173,7 @@ const Navbar = () => {
 												variant={"unstyled"}
 												className={ele.class}
 											>
-												<NavLink key={ele.id}>
-													{ele.id.charAt(0).toUpperCase()}
-													{ele.id.slice(1)}
-												</NavLink>
+												<NavLink key={ele.id}>{ele.id}</NavLink>
 											</Button>
 										</Box>
 									);

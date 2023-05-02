@@ -28,13 +28,7 @@ const Projects = () => {
 		show === 4 ? setShow(7) : setShow(4);
 	};
 	return (
-		<Flex
-			flexDirection={"column"}
-			id="projects"
-			pt="5"
-			pb="5"
-			class="nav-link projects"
-		>
+		<Flex flexDirection={"column"} id="projects" pt="5" pb="5">
 			<Center>
 				<Heading
 					size={["lg", "xl"]}
