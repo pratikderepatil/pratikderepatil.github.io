@@ -105,7 +105,7 @@ const Navbar = () => {
 							pr={"3"}
 							color="black"
 							variant={"unstyled"}
-							class="nav-link resume"
+							className="nav-link resume"
 						>
 							<a href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download">
 								Resume
@@ -195,7 +195,7 @@ const Navbar = () => {
 										pr={"3"}
 										color="black"
 										variant={"unstyled"}
-										class="nav-link resume"
+										className="nav-link resume"
 									>
 										<a href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download">
 											Resume
