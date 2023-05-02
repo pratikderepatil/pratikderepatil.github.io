@@ -165,7 +165,6 @@ const Navbar = () => {
 											pr={"4"}
 											borderColor="#FFDE59"
 											key={ele.id}
-											className={ele.class}
 										>
 											<Button
 												size="lg"
@@ -173,6 +172,7 @@ const Navbar = () => {
 												pl={"4"}
 												color="black"
 												variant={"unstyled"}
+												className={ele.class}
 											>
 												<NavLink key={ele.id}>
 													{ele.id.charAt(0).toUpperCase()}
