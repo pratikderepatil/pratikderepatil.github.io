@@ -71,7 +71,6 @@ const Navbar = () => {
 								pr={"3"}
 								borderColor="#FFDE59"
 								key={ele.id}
-								className={ele.class}
 							>
 								<Button
 									size="lg"
@@ -81,7 +80,7 @@ const Navbar = () => {
 									color="black"
 									variant={"unstyled"}
 								>
-									<NavLink key={ele.id}>
+									<NavLink key={ele.id} className={ele.class}>
 										{ele.id.charAt(0).toUpperCase()}
 										{ele.id.slice(1)}
 									</NavLink>
@@ -107,7 +106,11 @@ const Navbar = () => {
 							variant={"unstyled"}
 							className="nav-link resume"
 						>
-							<a href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download">
+							<a
+								href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
+								id="resume-button-1"
+								className="nav-link resume"
+							>
 								Resume
 							</a>
 						</Button>
@@ -195,9 +198,13 @@ const Navbar = () => {
 										pr={"3"}
 										color="black"
 										variant={"unstyled"}
-										className="nav-link resume"
+										id="resume-button-1"
 									>
-										<a href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download">
+										<a
+											href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
+											className="nav-link resume"
+											id="resume-link-1"
+										>
 											Resume
 										</a>
 									</Button>

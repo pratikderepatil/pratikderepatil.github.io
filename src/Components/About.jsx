@@ -36,7 +36,6 @@ const About = () => {
 			<Center>
 				<Stack
 					direction={{ base: "column", md: "row" }}
-					id="Home"
 					w={["100%", "70%"]}
 					justifyContent="center"
 					alignItems={"center"}
@@ -62,6 +61,7 @@ const About = () => {
 							<Text
 								fontSize={["xl", "xl", "xl", "2xl"]}
 								// pr={["", "10%", "6%", "15%"]}
+								id="user-detail-intro"
 							>
 								Hi Everyone, I am <Text as="b">Pratik Derepatil</Text> from{" "}
 								<Text as="b">Pune, Maharashtra.</Text> I have completed my post

@@ -10,6 +10,7 @@ import {
 	Tooltip,
 	VStack,
 	useColorModeValue,
+	Button,
 } from "@chakra-ui/react";
 import React from "react";
 import { aboutme } from "../Data/aboutme";
@@ -101,26 +102,28 @@ const Home = () => {
 						/>
 					</Tooltip>
 				</Link>
-
-				<Link
-					target="_blank"
-					href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
-				>
-					<Tooltip label="Resume" hasArrow>
-						<IconButton
-							aria-label="resume"
-							variant="ghost"
-							size="lg"
-							fontSize="3xl"
-							icon={<HiDocumentDuplicate />}
-							_hover={{
-								bg: "yellow.500",
-								color: useColorModeValue("white", "gray.700"),
-							}}
-							isRound
-						/>
-					</Tooltip>
-				</Link>
+				<Button variant={"unstyled"} id="resume-button-2">
+					<Link
+						target="_blank"
+						id="resume-link-2"
+						href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
+					>
+						<Tooltip label="Resume" hasArrow>
+							<IconButton
+								aria-label="resume"
+								variant="ghost"
+								size="lg"
+								fontSize="3xl"
+								icon={<HiDocumentDuplicate />}
+								_hover={{
+									bg: "yellow.500",
+									color: useColorModeValue("white", "gray.700"),
+								}}
+								isRound
+							/>
+						</Tooltip>
+					</Link>
+				</Button>
 				<Link target="_blank" href="mailto:pratikdere333@gmail.com">
 					<Tooltip label="Mail" hasArrow>
 						<IconButton
