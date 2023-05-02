@@ -22,7 +22,7 @@ const About = () => {
 	return (
 		<Flex
 			id="about"
-			class="about section"
+			className="about section"
 			flexDirection={"column"}
 			pb="10"
 			bgColor="#FFFBEC"

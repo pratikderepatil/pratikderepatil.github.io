@@ -22,12 +22,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Home = () => {
 	return (
-		<Flex
-			id="home"
-			flexDirection={"column"}
-			pt="28"
-			h={["80vh", "80vh", "80vh", "100vh"]}
-		>
+		<Flex id="home" flexDirection={"column"} pt="28" h={["100vh"]}>
 			<Flex
 				w={["90%", "60%"]}
 				direction="column"
@@ -178,7 +173,7 @@ const Home = () => {
 
 			<Flex
 				w={"full"}
-				h={["35vh", "50vh"]}
+				h={["50vh", "50vh"]}
 				backgroundImage={"url(https://wallpapercave.com/wp/1OiPBn0.jpg)"}
 				backgroundSize={"cover"}
 				backgroundPosition={"center bottom"}
@@ -186,7 +181,7 @@ const Home = () => {
 				<VStack
 					w={"full"}
 					justify={"center"}
-					px={useBreakpointValue({ base: 4, md: 8 })}
+					px={useBreakpointValue({ sm: 2, base: 4, md: 8 })}
 					bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
 				>
 					<Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
@@ -194,7 +189,10 @@ const Home = () => {
 							color={"white"}
 							fontWeight={700}
 							lineHeight={1.2}
-							fontSize={useBreakpointValue({ base: "2xl", md: "4xl" })}
+							fontSize={useBreakpointValue({
+								base: "2xl",
+								md: "4xl",
+							})}
 							fontFamily="Dancing script"
 						>
 							❞ 𝑶𝒏𝒍𝒚 𝒂 𝒇𝒂𝒊𝒍𝒖𝒓𝒆 𝒂𝒃𝒂𝒏𝒅𝒐𝒏𝒔 𝒉𝒊𝒔 𝒑𝒓𝒊𝒏𝒄𝒊𝒑𝒍𝒆𝒔 𝒂𝒏𝒅 𝒑𝒓𝒊𝒅𝒆 ❞
@@ -210,7 +208,7 @@ const Home = () => {
 
 							<ScrollLink
 								activeClass="active"
-								to={"Contact"}
+								to={"contact"}
 								spy={true}
 								smooth={true}
 								offset={-100}

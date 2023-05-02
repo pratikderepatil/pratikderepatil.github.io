@@ -78,11 +78,10 @@ const Navbar = () => {
 									pl={"3"}
 									pr={"3"}
 									color="black"
+									className={ele.class}
 									variant={"unstyled"}
 								>
-									<NavLink key={ele.id} className={ele.class}>
-										{ele.id}
-									</NavLink>
+									<NavLink key={ele.id}>{ele.id}</NavLink>
 								</Button>
 							</Box>
 						);
@@ -126,7 +125,7 @@ const Navbar = () => {
 				display={{ base: "flex", xl: "none" }}
 				id="nav-menu"
 				pos={"fixed"}
-				zIndex={18}
+				zIndex={1}
 			>
 				<Button size={"2xl"} variant="unstyled" onClick={onOpen}>
 					<TfiMenu w={10} />
