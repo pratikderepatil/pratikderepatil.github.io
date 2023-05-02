@@ -78,10 +78,11 @@ const Navbar = () => {
 									pl={"3"}
 									pr={"3"}
 									color="black"
-									className={ele.class}
 									variant={"unstyled"}
 								>
-									<NavLink key={ele.id}>{ele.id}</NavLink>
+									<NavLink key={ele.id} className={ele.class}>
+										{ele.id}
+									</NavLink>
 								</Button>
 							</Box>
 						);
@@ -170,9 +171,10 @@ const Navbar = () => {
 												pl={"4"}
 												color="black"
 												variant={"unstyled"}
-												className={ele.class}
 											>
-												<NavLink key={ele.id}>{ele.id}</NavLink>
+												<NavLink key={ele.id} className={ele.class}>
+													{ele.id}
+												</NavLink>
 											</Button>
 										</Box>
 									);

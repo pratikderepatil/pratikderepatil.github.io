@@ -56,6 +56,7 @@ const About = () => {
 							alignItems="start"
 							justifyContent={"center"}
 							width={["80%", "full"]}
+							id="user-detail-intro"
 							gap={[2, 6]}
 						>
 							<Text
