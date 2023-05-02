@@ -63,11 +63,7 @@ const Home = () => {
 					</Text>
 				</Heading>
 
-				<Text
-					fontSize={["lg", "lg", "lg", "2xl"]}
-					textAlign="center"
-					id="user-detail-intro"
-				>
+				<Text fontSize={["lg", "lg", "lg", "2xl"]} textAlign="center">
 					{aboutme.summary}
 				</Text>
 			</Flex>

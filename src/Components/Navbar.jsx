@@ -53,7 +53,7 @@ const Navbar = () => {
 				w="full"
 				justifyContent="space-between"
 				p={6}
-				display={{ base: "none", xl: "flex" }}
+				display={{ base: "none", lg: "flex" }}
 				bgColor="#FFFBEC"
 				id="nav-menu"
 				zIndex={18}
@@ -125,7 +125,7 @@ const Navbar = () => {
 				justifyContent="space-between"
 				mb={0}
 				bgColor="#FFFBEC"
-				display={{ base: "flex", xl: "none" }}
+				display={{ base: "flex", lg: "none" }}
 				id="nav-menu"
 				pos={"fixed"}
 				zIndex={1}
