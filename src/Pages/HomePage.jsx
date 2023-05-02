@@ -13,7 +13,7 @@ import Navbar from "../Components/Navbar";
 
 const HomePage = () => {
 	return (
-		<VStack className="container" w="100%">
+		<VStack w="100%" className="nav-link home">
 			<Navbar />
 			<Home />
 			<About />

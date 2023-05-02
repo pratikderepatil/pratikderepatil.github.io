@@ -48,7 +48,13 @@ export default function Contact() {
 	};
 
 	return (
-		<Flex w="100%" align="center" justify="center" id="contact">
+		<Flex
+			w="100%"
+			align="center"
+			justify="center"
+			id="contact"
+			class="nav-link contact"
+		>
 			<Box borderRadius="lg" p={3}>
 				<Box>
 					<VStack spacing={3}>

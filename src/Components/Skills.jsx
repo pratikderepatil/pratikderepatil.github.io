@@ -10,6 +10,7 @@ const Skills = () => {
 			alignItems="center"
 			pt="5"
 			pb="5"
+			className="nav-link skills"
 		>
 			<Center>
 				<Heading
