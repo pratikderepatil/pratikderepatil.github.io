@@ -23,9 +23,9 @@ import { Carousel } from "react-responsive-carousel";
 import { MdExpandLess, MdExpandMore } from "react-icons/md";
 
 const Projects = () => {
-	let [show, setShow] = useState(2);
+	let [show, setShow] = useState(4);
 	const handleshow = () => {
-		show === 2 ? setShow(7) : setShow(2);
+		show === 4 ? setShow(7) : setShow(4);
 	};
 	return (
 		<Flex
@@ -179,10 +179,10 @@ const Projects = () => {
 					<Button
 						variant={"link"}
 						colorScheme="yellow"
-						rightIcon={show === 2 ? <MdExpandMore /> : <MdExpandLess />}
+						rightIcon={show === 4 ? <MdExpandMore /> : <MdExpandLess />}
 						onClick={handleshow}
 					>
-						{show === 2 ? "Show More" : "Show Less"}
+						{show === 4 ? "Show More" : "Show Less"}
 					</Button>
 				</Flex>
 			</SimpleGrid>
