@@ -77,11 +77,7 @@ export default function Contact() {
 								justify="space-around"
 								direction={{ base: "row", md: "column" }}
 							>
-								<Link
-									id="contact-email"
-									target="_blank"
-									href="mailto:pratikdere333@gmail.com"
-								>
+								<Link target="_blank" href="mailto:pratikdere333@gmail.com">
 									<Tooltip label="Mail" hasArrow>
 										<IconButton
 											aria-label="email"
@@ -97,11 +93,7 @@ export default function Contact() {
 										/>
 									</Tooltip>
 								</Link>
-								<Link
-									id="contact-phone"
-									target="_blank"
-									href="tel:+917745081531"
-								>
+								<Link target="_blank" href="tel:+917745081531">
 									<Tooltip label="Phone" hasArrow>
 										<IconButton
 											aria-label="phone"

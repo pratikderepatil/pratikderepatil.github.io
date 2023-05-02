@@ -29,7 +29,12 @@ const Footer = () => {
 				</Text>
 				<Flex>
 					<Tooltip label={"Contact Me"} closeOnClick={false} hasArrow>
-						<Button size={["xs", "md"]} variant="none" leftIcon={<HiPhone />}>
+						<Button
+							size={["xs", "md"]}
+							variant="none"
+							leftIcon={<HiPhone />}
+							id="contact-phone"
+						>
 							<a href="tel:+917745081531">+91-77450-81531</a>
 						</Button>
 					</Tooltip>
@@ -43,6 +48,7 @@ const Footer = () => {
 							variant="none"
 							leftIcon={<HiEnvelope />}
 							onClick={onCopy}
+							id="contact-email"
 						>
 							pratikdere333@gmail.com
 						</Button>
