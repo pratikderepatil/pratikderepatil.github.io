@@ -109,6 +109,8 @@ const Navbar = () => {
 								href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
 								id="resume-button-1"
 								className="nav-link resume"
+								target="_blank"
+								rel="noreferrer"
 							>
 								Resume
 							</a>
@@ -201,6 +203,8 @@ const Navbar = () => {
 											href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
 											className="nav-link resume"
 											id="resume-link-1"
+											target="_blank"
+											rel="noreferrer"
 										>
 											Resume
 										</a>
