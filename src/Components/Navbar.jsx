@@ -18,7 +18,14 @@ import React from "react";
 import logo from "../Data/images/name1.png";
 import { Link } from "react-scroll";
 
-const Links = ["home", "about", "skills", "experience", "projects", "contact"];
+const Links = [
+	{ id: "home", class: "nav-link home" },
+	{ id: "about", class: "nav-link about" },
+	{ id: "skills", class: "nav-link skills" },
+	{ id: "experience", class: "" },
+	{ id: "projects", class: "nav-link projects" },
+	{ id: "contact", class: "nav-link contact" },
+];
 // https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download
 const Navbar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -63,7 +70,8 @@ const Navbar = () => {
 								pl={"3"}
 								pr={"3"}
 								borderColor="#FFDE59"
-								key={ele}
+								key={ele.id}
+								className={ele.class}
 							>
 								<Button
 									size="lg"
@@ -73,9 +81,9 @@ const Navbar = () => {
 									color="black"
 									variant={"unstyled"}
 								>
-									<NavLink key={ele}>
-										{ele.charAt(0).toUpperCase()}
-										{ele.slice(1)}
+									<NavLink key={ele.id}>
+										{ele.id.charAt(0).toUpperCase()}
+										{ele.id.slice(1)}
 									</NavLink>
 								</Button>
 							</Box>
@@ -97,6 +105,7 @@ const Navbar = () => {
 							pr={"3"}
 							color="black"
 							variant={"unstyled"}
+							class="nav-link resume"
 						>
 							<a href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download">
 								Resume
@@ -152,7 +161,8 @@ const Navbar = () => {
 											pl={"4"}
 											pr={"4"}
 											borderColor="#FFDE59"
-											key={ele}
+											key={ele.id}
+											className={ele.class}
 										>
 											<Button
 												size="lg"
@@ -161,9 +171,9 @@ const Navbar = () => {
 												color="black"
 												variant={"unstyled"}
 											>
-												<NavLink key={ele}>
-													{ele.charAt(0).toUpperCase()}
-													{ele.slice(1)}
+												<NavLink key={ele.id}>
+													{ele.id.charAt(0).toUpperCase()}
+													{ele.id.slice(1)}
 												</NavLink>
 											</Button>
 										</Box>
@@ -185,6 +195,7 @@ const Navbar = () => {
 										pr={"3"}
 										color="black"
 										variant={"unstyled"}
+										class="nav-link resume"
 									>
 										<a href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download">
 											Resume
