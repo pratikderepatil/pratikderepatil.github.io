@@ -21,7 +21,7 @@ import React from "react";
 const About = () => {
 	return (
 		<Flex
-			id="about"
+			id="About"
 			className="about section"
 			flexDirection={"column"}
 			pb="10"
@@ -62,7 +62,6 @@ const About = () => {
 							<Text
 								fontSize={["xl", "xl", "xl", "2xl"]}
 								// pr={["", "10%", "6%", "15%"]}
-								id="user-detail-intro"
 							>
 								Hi Everyone, I am <Text as="b">Pratik Derepatil</Text> from{" "}
 								<Text as="b">Pune, Maharashtra.</Text> I have completed my post

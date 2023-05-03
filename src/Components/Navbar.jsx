@@ -19,12 +19,12 @@ import logo from "../Data/images/name1.png";
 import { Link } from "react-scroll";
 
 const Links = [
-	{ id: "home", class: "nav-link home" },
-	{ id: "about", class: "nav-link about" },
-	{ id: "skills", class: "nav-link skills" },
-	{ id: "experience", class: "" },
-	{ id: "projects", class: "nav-link projects" },
-	{ id: "contact", class: "nav-link contact" },
+	{ id: "Home", class: "nav-link home" },
+	{ id: "About", class: "nav-link about" },
+	{ id: "Skills", class: "nav-link skills" },
+	{ id: "Experience", class: "" },
+	{ id: "Projects", class: "nav-link projects" },
+	{ id: "Contact", class: "nav-link contact" },
 ];
 // https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download
 const Navbar = () => {
@@ -53,7 +53,7 @@ const Navbar = () => {
 				w="full"
 				justifyContent="space-between"
 				p={6}
-				// display={{ base: "none", lg: "flex" }}
+				display={{ base: "none", lg: "flex" }}
 				bgColor="#FFFBEC"
 				id="nav-menu"
 				zIndex={18}
@@ -117,7 +117,7 @@ const Navbar = () => {
 				</HStack>
 				<Image src={logo} w={["50%", "50%", "30%", "18%"]} />
 			</Flex>
-			{/* <Flex
+			<Flex
 				p={4}
 				w="full"
 				justifyContent="space-between"
@@ -171,10 +171,9 @@ const Navbar = () => {
 												pl={"4"}
 												color="black"
 												variant={"unstyled"}
+												className={ele.class}
 											>
-												<NavLink key={ele.id} className={ele.class}>
-													{ele.id}
-												</NavLink>
+												<NavLink key={ele.id}>{ele.id}</NavLink>
 											</Button>
 										</Box>
 									);
@@ -223,7 +222,7 @@ const Navbar = () => {
 					</DrawerContent>
 				</Drawer>
 				<Image src={logo} w={["50%", "50%", "30%", "20%"]} />
-			</Flex> */}
+			</Flex>
 		</>
 	);
 };

@@ -22,7 +22,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Home = () => {
 	return (
-		<Flex id="home" flexDirection={"column"} pt="28" h={["100vh"]}>
+		<Flex id="Home" flexDirection={"column"} pt="28" h={["100vh"]}>
 			<Flex
 				w={["90%", "60%"]}
 				direction="column"
