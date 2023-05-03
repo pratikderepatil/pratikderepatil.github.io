@@ -53,7 +53,7 @@ const Navbar = () => {
 				w="full"
 				justifyContent="space-between"
 				p={6}
-				display={{ base: "none", lg: "flex" }}
+				// display={{ base: "none", lg: "flex" }}
 				bgColor="#FFFBEC"
 				id="nav-menu"
 				zIndex={18}
@@ -79,10 +79,9 @@ const Navbar = () => {
 									pr={"3"}
 									color="black"
 									variant={"unstyled"}
+									className={ele.class}
 								>
-									<NavLink key={ele.id} className={ele.class}>
-										{ele.id}
-									</NavLink>
+									<NavLink key={ele.id}>{ele.id}</NavLink>
 								</Button>
 							</Box>
 						);
@@ -103,7 +102,6 @@ const Navbar = () => {
 							pr={"3"}
 							color="black"
 							variant={"unstyled"}
-							className="nav-link resume"
 						>
 							<a
 								href="https://drive.google.com/uc?id=1-XCEzhMjrPIuctcDcL6dQ7AkNocQTmQD&export=download"
@@ -119,7 +117,7 @@ const Navbar = () => {
 				</HStack>
 				<Image src={logo} w={["50%", "50%", "30%", "18%"]} />
 			</Flex>
-			<Flex
+			{/* <Flex
 				p={4}
 				w="full"
 				justifyContent="space-between"
@@ -225,7 +223,7 @@ const Navbar = () => {
 					</DrawerContent>
 				</Drawer>
 				<Image src={logo} w={["50%", "50%", "30%", "20%"]} />
-			</Flex>
+			</Flex> */}
 		</>
 	);
 };
