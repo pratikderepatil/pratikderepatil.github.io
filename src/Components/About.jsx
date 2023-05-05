@@ -65,9 +65,9 @@ const About = () => {
 							>
 								Hi Everyone, I am <Text as="b">Pratik Derepatil</Text> from{" "}
 								<Text as="b">Pune, Maharashtra.</Text> I have completed my post
-								graduation in Master of Science from Fergusson College, Pune,
-								Maharashtra. Currently, I'm skilled in both frontend and backend
-								technology, especially <Text as="b">MERN Stack</Text>.
+								graduation in Computer Application from Fergusson College, Pune.
+								Currently, I'm skilled in both frontend and backend technology,
+								especially <Text as="b">MERN Stack</Text>.
 							</Text>
 							<Text
 								fontSize={["xl", "xl", "xl", "2xl"]}
