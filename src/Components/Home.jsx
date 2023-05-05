@@ -204,7 +204,7 @@ const Home = () => {
 
 							<ScrollLink
 								activeClass="active"
-								to={"contact"}
+								to={"Contact"}
 								spy={true}
 								smooth={true}
 								offset={-100}
