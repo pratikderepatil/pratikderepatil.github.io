@@ -1,5 +1,17 @@
 export const experience = [
 	{
+		title: "Travelopia",
+		date: "June 2023 - Present",
+		subtitle: "Product Engineer - Hybrid",
+		logo: true,
+		description: [
+			"Writing and maintaining code",
+			"Working on minor bug fixes",
+			"Monitoring the technical performance of internal systems",
+		],
+		link: "",
+	},
+	{
 		title: "Masai School",
 		date: "April 2022 - January 2023",
 		subtitle: "Student (Remote)",
