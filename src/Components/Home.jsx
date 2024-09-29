@@ -24,7 +24,7 @@ const Home = () => {
 	return (
 		<Flex id="Home" flexDirection={"column"} pt="28" h={["100vh"]}>
 			<Flex
-				w={["90%", "60%"]}
+				w={["90%", "70%"]}
 				direction="column"
 				alignItems="center"
 				justifyContent={"center"}

@@ -22,7 +22,7 @@ const Links = [
 	{ id: "Home", class: "nav-link home" },
 	{ id: "About", class: "nav-link about" },
 	{ id: "Skills", class: "nav-link skills" },
-	{ id: "Experience", class: "" },
+	{ id: "Experience", class: "nav-link experience" },
 	{ id: "Projects", class: "nav-link projects" },
 	{ id: "Contact", class: "nav-link contact" },
 ];

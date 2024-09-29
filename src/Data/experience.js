@@ -1,20 +1,16 @@
 export const experience = [
 	{
 		title: "Travelopia",
-		date: "June 2023 - Present",
+		date: "June 2023 - April 2024",
 		subtitle: "Product Engineer - Hybrid",
 		logo: true,
 		description: [
-			"Implemented a Two-Factor Authentication (2FA) system with a standardized QR code mechanism, inspired by the Sucuri firewall setup.",
-			"Updated user interface elements using Vue.js to enhance interactivity and responsiveness.Resolved software bugs to ensure seamless functionality and optimize user experience.",
-			"Leveraged MongoDB querying capabilities to efficiently extract relevant documents spanning specified durations, facilitating streamlined CSV creation for marketing team analysis.",
-			"Implemented and maintained high-quality, scalable, reliable, and secure code following best practices, while conducting thorough testing using Test-Driven Development (TDD) principles, encompassing both unit and integration tests.",
-			"Monitored application performance, identified bottlenecks, and proposed optimizations for improved user experience.",
-			"Maintained version control using GitHub for seamless collaboration and efﬁcient codebase management.",
-			"Embraced Agile methodologies, such as Pairing, Creative sprint planning, Collaborative story handoffs and CI/CD methodology, to foster a dynamic and iterative development environment.",
-			"Tech Stack: React JS, Redux, TypeScript, JavaScript, Babel, Jest, SASS, Element UI, HTML, CSS, MongoDB, GitHub"
+			"Optimized user interface using React.js, increasing interactivity and resulting in improved customer satisfaction. Engineered a Two-Factor Authentication (2FA) system with a QR code mechanism, enhancing security protocols and reducing potential security breaches.",
+			"Streamlined data extraction processes using MongoDB, facilitating efficient CSV creation for marketing analysis.",
+			"Implemented Test-Driven Development (TDD) practices to ensure high-quality code, resulting in a decrease in postrelease bugs and an increase in overall product stability.",
+			"Utilized CI/CD processes to automate testing and deployment tasks, leading to an increase in development efficiency and an improvement in overall product performance.",
+			"Tech Stack: React JS, Redux, TypeScript, JavaScript, Jest, Element UI, HTML, CSS, MongoDB, GitHub",
 		],
-		link: "",
 	},
 	{
 		title: "Masai School",
@@ -22,16 +18,14 @@ export const experience = [
 		subtitle: "Student (Remote)",
 		logo: false,
 		description: [
-			"Completed an intensive Full Stack Web Development course, gaining expertise in both front-end and back-end technologies.",
-			"Developed a strong foundation in web development concepts, including HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB.",
-			"Completed multiple hands-on projects, applying industry best practices and agile methodologies to create functional and responsive web applications.",
-			"Collaborated with peers and instructors to solve complex problems, participate in code reviews, and refine coding skills through continuous learning and feedback.",
-			"Demonstrated proficiency in version control using Git and GitHub, ensuring effective collaboration and code management within a team environment.",
-			"Acquired valuable problem-solving skills and adaptability by troubleshooting issues, debugging code, and implementing solutions to overcome challenges during the course.",
-			"Maintained a growth mindset and commitment to professional development, actively seeking opportunities to expand knowledge and stay current with emerging technologies and trends in web development.",
-			"Tech Stack: HTML, CSS, JavaScript, React.js, Redux, Tailwind CSS, Node.js, Express.js, MongoDB, TypeScript, Git, GitHub, Babel, SASS, JIRA, React-Router",
+			"Completed a Full-Stack Web Development course with expertise in front-end and back-end technologies.",
+			"Developed strong skills in HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB.",
+			"Successfully built responsive web applications while adhering to industry best practices and agile methodologies.",
+			"Collaborated effectively with peers on various projects, refining code quality through thorough reviews.",
+			"Proficient in Git and GitHub for version control, ensuring seamless team collaboration.",
+			"Acquired valuable problem-solving skills through debugging and implementing effective solutions.",
+			"Tech Stack: HTML, CSS, JavaScript, React.js, Redux, Node.js, MongoDB.",
 		],
-		link: "",
 	},
 	{
 		title: "Bajaj Finserv",
@@ -39,11 +33,9 @@ export const experience = [
 		subtitle: "Project Manager Trainee, Pune, Maharashtra",
 		logo: true,
 		description: [
-			"Provide project updates on a consistent basis to various stakeholders about strategy and progress. ",
-			"Understand business requirements, validate the feasibility and translate them into technical requirements.",
-			"Edit a variety of digital content as needed, including marketing pages, informational content, contextual help, alert messages and FAQs using AEM (Adobe Experience Manager) ",
+			"Presented detailed project updates to key stakeholders on strategic initiatives, showcasing progress metrics and highlighting milestones achieved, increasing stakeholder engagement and satisfaction.",
+			"Managed Content Fragments within the AEM platform to streamline authoring processes, enabling efficient content maintenance and reuse across various digital channels for seamless omnichannel experiences, resulting in an improvement in content consistency and quality.",
 		],
-		link: "https://drive.google.com/file/d/1QFpThzNUogdPH7XUD29L5labHLorCHZd",
 	},
 	{
 		title: "Code Gurukul Pvt Ltd",
@@ -52,17 +44,17 @@ export const experience = [
 		logo: true,
 
 		description: [
-			"Creating a web platform to learn programming concepts using blocks with drag-and-drop functionality with decent animation",
-			"Technologies: Blockly, React JS, Phaser JS",
+			"Implemented puzzle games for children, improving their understanding of data structures and algorithms.",
+			"Specialized in utilizing Blockly for creating interactive and dynamic web pages.",
+			"Collaborated with team members to optimize web page performance.",
+			"Tech Stack: Blockly, Javascript, HTML, CSS, Github.",
 		],
-		link: "https://drive.google.com/file/d/1CImUIasKJW1bfI3eIGo6k7vG052pW3nw",
 	},
 	{
 		title: "M.Sc Computer Application",
 		logo: false,
 		date: "June 2019 - March 2021",
 		subtitle: "Fergusson College, Pune, Maharashtra",
-		link: "",
 		description: [],
 	},
 	{
@@ -71,7 +63,6 @@ export const experience = [
 		date: "July 2018 - February 2019",
 		subtitle: "SEED Infotech, Pune, Maharashtra",
 		description: [],
-		link: "https://drive.google.com/file/d/1jeRAldY9PEmIUdd39lsov1dutv6LmXbe/view?usp=sharing",
 	},
 	{
 		title: "B.Sc Computer Science",
@@ -79,6 +70,5 @@ export const experience = [
 		date: "June 2015 - October 2018",
 		subtitle: "MIT College, Pune, Maharashtra",
 		description: [],
-		link: "https://drive.google.com/file/d/1hChMP5ZRNfNuVuxHo5sdKK4Rtv-BiElT/view?usp=sharing",
 	},
 ];

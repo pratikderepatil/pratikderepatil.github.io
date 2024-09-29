@@ -15,7 +15,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experience } from "../Data/experience";
 import { MdWork, MdExpandMore, MdExpandLess } from "react-icons/md";
-import { BsLink45Deg, BsFillStarFill } from "react-icons/bs";
+import { BsFillStarFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 import { useState } from "react";
 
@@ -60,16 +60,7 @@ const Experience = () => {
 							>
 								<Flex flexDirection={"column"} gap="2">
 									<Heading as="h1" size={["sm", "md"]}>
-										<Flex justifyContent={"space-between"}>
-											{ele.title}
-											{ele.link === "" ? (
-												<></>
-											) : (
-												<a href={ele.link} target="_blank" rel="noreferrer">
-													<BsLink45Deg size={"4vh"} />
-												</a>
-											)}
-										</Flex>
+										{ele.title}
 									</Heading>
 									<Text
 										as={"cite"}
