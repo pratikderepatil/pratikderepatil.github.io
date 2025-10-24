@@ -1,5 +1,21 @@
 export const experience = [
 	{
+		title: "Rahi Platform Technologies",
+		date: "Oct 2024 - Present",
+		subtitle: "Software Engineer - Pune",
+		logo: true,
+		description: [
+			"Structured a new folder hierarchy and configured essential dependencies, improving code organization and streamlining the development workflow.",
+			"Built optimized Docker images for Next.js and Nest.js applications, enhancing deployment efficiency and reducing container size.",
+			"Implemented runtime variables for both applications, enabling dynamic Docker images and improving environment variable management.",
+			"Developed robust test cases using Jest with React Testing Library (RTL) for Next.js and Jest for Nest.js, ensuring high code quality and preventing regressions.",
+			"Applied best practices for code quality and maintainability, emphasizing clean architecture and component reusability.",
+			"Collaborated closely with backend developers to ensure seamless API integration and efficient data flow.",
+			"Documented technical implementations to support team knowledge sharing and onboarding.",
+			"Tech Stack: Next.js, Nest.js, React.js, TypeScript, JavaScript, Jest, React Testing Library, Docker, CI/CD, HTML, CSS, GitHub"
+		],
+	},
+	{
 		title: "Travelopia",
 		date: "June 2023 - April 2024",
 		subtitle: "Product Engineer - Hybrid",
