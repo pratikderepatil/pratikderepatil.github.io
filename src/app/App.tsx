@@ -1,0 +1,25 @@
+import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { Skills } from "./components/Skills";
+import { Experience } from "./components/Experience";
+import { EducationCerts } from "./components/EducationCerts";
+import { Achievements } from "./components/Achievements";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+
+export default function App() {
+  return (
+    <div style={{ background: "#050d1a", minHeight: "100vh" }}>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <EducationCerts />
+      <Achievements />
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
