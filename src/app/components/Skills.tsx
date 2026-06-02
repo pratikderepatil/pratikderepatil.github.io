@@ -64,6 +64,7 @@ export function Skills() {
                 ? "bg-[#3b82f6] text-white shadow-lg shadow-blue-500/20"
                 : "bg-[#112240] text-slate-400 border border-[#1e3a5f] hover:text-white"
             }`}
+            aria-pressed={activeCategory === null}
           >
             All
           </button>
@@ -76,6 +77,7 @@ export function Skills() {
                   ? "bg-[#3b82f6] text-white shadow-lg shadow-blue-500/20"
                   : "bg-[#112240] text-slate-400 border border-[#1e3a5f] hover:text-white"
               }`}
+              aria-pressed={activeCategory === cat}
             >
               {CATEGORY_ICONS[cat]} {cat}
             </button>

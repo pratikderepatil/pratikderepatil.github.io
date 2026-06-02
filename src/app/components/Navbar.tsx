@@ -46,7 +46,7 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#050d1a]/90 backdrop-blur-md border-b border-[#60a5fa]/10 shadow-lg shadow-black/20"
+          ? "bg-[#050d1a]/90 border-b border-[#60a5fa]/10 shadow-lg shadow-black/20"
           : "bg-transparent"
       }`}
     >
@@ -55,6 +55,7 @@ export function Navbar() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center gap-2"
+          aria-label="Scroll to top"
         >
           <div
             className="w-9 h-9 rounded-lg flex items-center justify-center font-bold text-white text-sm"
@@ -107,6 +108,8 @@ export function Navbar() {
         <button
           className="md:hidden text-slate-300 hover:text-white"
           onClick={() => setMobileOpen((v) => !v)}
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileOpen}
         >
           {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -119,7 +122,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#050d1a]/95 backdrop-blur-md border-b border-[#60a5fa]/10 px-6 pb-4"
+            className="md:hidden bg-[#050d1a]/95 border-b border-[#60a5fa]/10 px-6 pb-4"
           >
             {NAV_LINKS.map((link) => (
               <button

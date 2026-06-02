@@ -191,7 +191,7 @@ export function Contact() {
             >
               {/* Background decoration */}
               <div
-                className="absolute top-0 right-0 w-48 h-48 rounded-full opacity-5 blur-3xl"
+                className="absolute top-0 right-0 w-48 h-48 rounded-full opacity-5 blur-xl"
                 style={{ background: "#3b82f6" }}
               />
 

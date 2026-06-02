@@ -69,6 +69,7 @@ export function Experience() {
                 <button
                   className="w-full px-6 py-5 flex items-start justify-between gap-4 text-left"
                   onClick={() => setExpandedIndex(expandedIndex === i ? null : i)}
+                  aria-expanded={expandedIndex === i}
                 >
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1 flex-wrap">

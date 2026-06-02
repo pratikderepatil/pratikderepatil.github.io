@@ -26,24 +26,25 @@ export function Footer() {
             </div>
             <div>
               <p className="text-white font-semibold text-sm">{PROFILE.name}</p>
-              <p className="text-slate-500 text-xs">{PROFILE.title}</p>
+              <p className="text-slate-400 text-xs">{PROFILE.title}</p>
             </div>
           </div>
 
           {/* Social */}
           <div className="flex items-center gap-3">
             {[
-              { icon: Github, href: PROFILE.github },
-              { icon: Linkedin, href: PROFILE.linkedin },
-              { icon: Mail, href: `mailto:${PROFILE.email}` },
-              { icon: Globe, href: PROFILE.website },
-            ].map(({ icon: Icon, href }) => (
+              { icon: Github, href: PROFILE.github, label: "GitHub" },
+              { icon: Linkedin, href: PROFILE.linkedin, label: "LinkedIn" },
+              { icon: Mail, href: `mailto:${PROFILE.email}`, label: "Email" },
+              { icon: Globe, href: PROFILE.website, label: "Portfolio" },
+            ].map(({ icon: Icon, href, label }) => (
               <a
                 key={href}
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg flex items-center justify-center text-slate-500 border border-slate-800 hover:text-[#60a5fa] hover:border-[#60a5fa]/30 transition-all duration-200"
+                className="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 border border-slate-700 hover:text-[#60a5fa] hover:border-[#60a5fa]/30 transition-all duration-200"
+                aria-label={label}
               >
                 <Icon size={15} />
               </a>
@@ -53,10 +54,10 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="mt-8 pt-6 border-t border-[#1e3a5f]/30 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-slate-600 text-xs">
+          <p className="text-slate-400 text-xs">
             © {year} {PROFILE.name}. All rights reserved.
           </p>
-          <p className="text-slate-600 text-xs flex items-center gap-1">
+          <p className="text-slate-400 text-xs flex items-center gap-1">
             Built with{" "}
             <Heart size={10} className="text-[#fb7185]" fill="#fb7185" /> using
             React & Tailwind CSS

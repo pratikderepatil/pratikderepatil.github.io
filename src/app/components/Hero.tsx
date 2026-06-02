@@ -59,13 +59,13 @@ export function Hero() {
         }}
       />
 
-      {/* Glowing orbs */}
+      {/* Glowing orbs - reduced blur for performance */}
       <div
-        className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full opacity-10 blur-3xl"
+        className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full opacity-10 blur-xl"
         style={{ background: "radial-gradient(circle, #3b82f6, transparent)" }}
       />
       <div
-        className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full opacity-8 blur-3xl"
+        className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full opacity-8 blur-xl"
         style={{ background: "radial-gradient(circle, #8b5cf6, transparent)" }}
       />
 
@@ -321,7 +321,7 @@ export function Hero() {
                 >
                   {v}
                 </p>
-                <p className="text-slate-500 text-xs mt-0.5">{l}</p>
+                <p className="text-slate-400 text-xs mt-0.5">{l}</p>
               </div>
             ))}
           </div>
@@ -335,15 +335,19 @@ export function Hero() {
         transition={{ delay: 1.5, duration: 0.6 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer"
         onClick={() => scrollTo("about")}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && scrollTo("about")}
+        aria-label="Scroll to about section"
       >
-        <span className="text-slate-500 text-xs tracking-widest uppercase">
+        <span className="text-slate-400 text-xs tracking-widest uppercase">
           Scroll
         </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
         >
-          <ArrowDown size={16} className="text-slate-500" />
+          <ArrowDown size={16} className="text-slate-400" />
         </motion.div>
       </motion.div>
     </section>

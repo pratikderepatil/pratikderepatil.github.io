@@ -77,7 +77,7 @@ export function EducationCerts() {
                       </p>
                       <div className="flex items-center gap-3 text-slate-400 text-xs">
                         <span>{edu.location}</span>
-                        <span className="text-slate-600">•</span>
+                        <span className="text-slate-400">•</span>
                         <span
                           className="px-2 py-0.5 rounded-full"
                           style={{ background: "#112240", color: "#93c5fd", border: "1px solid #1e3a5f" }}

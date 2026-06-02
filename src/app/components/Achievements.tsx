@@ -42,7 +42,7 @@ export function Achievements() {
             >
               {/* Background glow */}
               <div
-                className="absolute top-0 right-0 w-32 h-32 rounded-full opacity-5 blur-2xl group-hover:opacity-10 transition-opacity duration-300"
+                className="absolute top-0 right-0 w-32 h-32 rounded-full opacity-5 blur-xl group-hover:opacity-10 transition-opacity duration-300"
                 style={{ background: ach.color }}
               />
 

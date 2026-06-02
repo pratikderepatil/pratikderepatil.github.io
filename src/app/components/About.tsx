@@ -115,7 +115,7 @@ export function About() {
                 >
                   LinkedIn <ExternalLink size={11} />
                 </a>
-                <span className="text-slate-600">•</span>
+                <span className="text-slate-400">•</span>
                 <a
                   href={PROFILE.github}
                   target="_blank"
